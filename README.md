@@ -2,6 +2,7 @@
 
 hi i'm Peter.
 Here are some bacis knowledge with links:
+* [how to use github] (http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/001374385852170d9c7adf13c30429b9660d0eb689dd43a000)
 
 * [how to use github] (https://guides.github.com/activities/hello-world/)
 
