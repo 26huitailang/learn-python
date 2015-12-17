@@ -1,0 +1,4 @@
+fisrt line input.2nd txt.\n 3rd'4th \n''5th'
+
+'6th'
+7
