@@ -1,11 +1,14 @@
 i = 0
 numbers = []
 
-while i < 6:
+a = int(raw_input("Input a distance: "))
+b = int(raw_input("Input the step distance: "))
+
+while i < a:
     print "At the top i is %d" % i
     numbers.append(i)
 
-    i = i + 1
+    i += b
     print "Numbers now: ", numbers
     print "At the bottom i is %d" % i
 

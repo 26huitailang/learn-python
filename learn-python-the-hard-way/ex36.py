@@ -1,0 +1,1 @@
+# update, ex36 a pyramid game, try to make a to-do list first.
