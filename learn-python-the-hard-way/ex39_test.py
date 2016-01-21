@@ -1,4 +1,5 @@
-import hashmap
+﻿import hashmap
+import pickle
 
 # create a mapping of state to abbreviation
 states = hashmap.new()
@@ -21,7 +22,9 @@ hashmap.set(cities, 'OR', 'Portland')
 
 # print out some cities
 print '-' * 10
-print "NY State has: %s" % hashmap.get(cities, 'NY')
+# print "NY State has: %s" % hashmap.get(cities, 'NY')
+assert hashmap.get(cities, 'NY') == 'New York', "Error: city/state not exists!"
+
 print "OR State has: %s" % hashmap.get(cities, 'OR')
 
 # print some states
@@ -52,3 +55,10 @@ if not state:
 # can you do this on one line?
 city = hashmap.get(cities, 'TX', 'Does Not Exist')
 print "The city for the state 'TX' is: %s" % city
+
+file = open("ex39.txt","w")
+pickle.dump(cities, file)
+file.close()
+
+# print states
+# print cities
