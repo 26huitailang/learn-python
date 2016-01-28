@@ -36,25 +36,3 @@ def shuffle3(lis):
     return result
 
 # r = shuffle3([1, 2, 2, 3, 3, 4, 5, 10])
-
-def Poker():
-    cards = []
-    faces = ['Spades', 'Hearts', 'Clubs', 'Diamonds']
-    numbers = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
-    for face in faces:
-        for number in numbers:
-            
-            card = zip(face, number)
-            cards.append(card)
-            print face,number
-            print card
-            # print cards
-    # cards = zip(faces,numbers)
-    
-            # cards.append(zip)
-r = []
-for i in range(0,52):
-    r.append(i)
-r = shuffle1(r)
-print(r)
-Poker()
