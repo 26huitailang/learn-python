@@ -26,16 +26,21 @@ class Cards(object):
         new_order_cards = dict(zip(order, cards)) # make these a dict
         # print new_order_cards
         return new_order_cards
+    
+    def to_get_card(self):
+        pass
+        
 
 class Pyramid(object):
-    def __init__(self, start_hierarchy)
-        self.start_hierarchy = start_hierarchy
+    def __init__(self, start_hierarchy):
+        # self.start_hierarchy = start_hierarchy
+        pass
         
 cards = Cards()
 deck = cards.a_pack_cards()
 shuffle_order_cards = cards.to_shuffle(deck)
-# new_deck = []
-# for k in new_order_cards:
-    # print new_order_cards[k]
-    # new_deck.append(new_order_cards[k])
-    # print new_deck
+new_deck = []
+for i in range(0,len(shuffle_order_cards)):
+    print "%d: %s" % (i, shuffle_order_cards[i])
+    new_deck.append(shuffle_order_cards[i])
+print new_deck
