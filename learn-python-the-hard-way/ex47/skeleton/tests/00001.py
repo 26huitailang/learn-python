@@ -10,3 +10,15 @@ class Room(object):
 
     def add_paths(self, paths):
         self.paths.update(paths)
+
+
+
+start = Room("STARTROOM", "DWON & WEST.")
+
+rooms = {"STARTROOM": start}
+
+current = rooms["STARTROOM"]
+
+print current.name
+    
+        

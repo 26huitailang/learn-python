@@ -7,15 +7,20 @@ class Engine(object):
         self.room_map = room_map
 
     def play(self):
-        current_room = self.room_map.opening_room()
-        last_room = self.room_map.next_room('testroom')
+        current_room = self.room_map.start_room
+        last_room = self.room_map.rooms['TestRoom']
 
         while current_room != last_room:
-            next_room_name = current_room.enter()
+            print current_room.name + ',' + current_room.description
+            direction_choice = raw_input("direction choice> ")
+            next_room_name = current_room.go(direction_choice)
+            if next_room_name == None:
+                continue
             current_room = self.room_map.next_room(next_room_name)
 
         # be sure to print out the last room
-        current_room.choose()
+        print current_room.name + ',' + current_room.description
+        print "U successedwest!"
 
 class Room(object):
 
@@ -24,59 +29,49 @@ class Room(object):
         self.description = description
         self.paths = {}
 
+    # 返回的是roomname
     def go(self, direction):
         return self.paths.get(direction, None)
 
     def add_paths(self, paths):
         self.paths.update(paths)
 
-class StartRoom(Room):
-
-    def __init__(self, name, description):
-        self.name = name
-        self.description = description
-        self.paths = {'west': 'trees', 'down': 'dungeon'}
-
-    def choose(self):
-        direction = raw_input("> ")
-
-        if direction == "west":
-            print self.go(direction)
-            return self.go(direction)
-        elif direction == "down":
-            print self.go(direction)
-            return self.go(direction)
-        else:
-            print self.go(direction)
-            return 'startroom'
-
-class Trees(Room):
-    pass
-
-class Dungeon(Room):
-    pass
-
-class GoldRoom(Room):
-    pass
-
-class TestRoom(Room):
-    pass
-
 class Map(object):
+
+    startroom = Room("StartRoom", "You can go west and down a hole.")
+    dungeon = Room("Dungeon", "UP")
+    trees = Room("Trees", "East, UP")
+    goldroom = Room("GoldRoom", "North")
+    testroom = Room("TestRoom", "Finish")
+
+    startroom.add_paths({'west': 'Trees', 'down': 'Dungeon'})
+    dungeon.add_paths({'up': 'StartRoom'})
+    trees.add_paths({'east': 'StartRoom', 'up': 'GoldRoom'})
+    goldroom.add_paths({'north': 'TestRoom'})
+
     rooms = {
-        'startroom': StartRoom("StartRoom", "U are in Start Room. There's two ways: West or Down"),
-        'trees': Trees("Trees", "U are in Start Room. There's two ways: West or Down"),
-        'dungeon': Dungeon("Dungeon", "U are in Start Room. There's two ways: West or Down"),
-        'goldroom': GoldRoom("GoldRoom", "U are in Start Room. There's two ways: West or Down"),
-        'testroom': TestRoom("TestRoom", "U are in Start Room. There's two ways: West or Down")
+        'StartRoom': startroom,
+        'Trees': trees,
+        'Dungeon': dungeon,
+        'GoldRoom': goldroom,
+        'TestRoom': testroom
     }
 
-    def __init__(self, start_room):
-        self.start_room = 'startroom'
+    def __init__(self):
+        self.start_room = self.rooms['StartRoom']
 
-    def next_room(self, room_name):
-        val = Map.rooms.get(room_name)
+    # 返回rooms字典对应的函数
+    def next_room(self, next_room_name):
+        val = Map.rooms.get(next_room_name)
         return val
 
-    def opening_room(self):
-        return self.next_room(self.start_room)
+    # 打印描述信息
+    # def opening_room(self, current):
+    #     print current.description
+
+# def run():
+#     a_map = Map()
+#     a_game = Engine(a_map)
+#     a_game.play()
+#
+# run()
