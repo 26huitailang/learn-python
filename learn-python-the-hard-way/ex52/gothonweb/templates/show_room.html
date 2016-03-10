@@ -1,0 +1,23 @@
+$def with (room, nums)
+
+<h1> $room.name </h1>
+
+<pre>
+$room.description
+</pre>
+
+$if room.name == "death":
+    <p><a href="/">Play Again?</a></p>
+$elif room.name == "Laser Weapon Armory":
+    <h2>Times Left: $nums</h2>
+    <p>
+    <form action="/game" method="POST">
+        - <input type="text" name="action"> <input type="SUBMIT">
+    </form>
+    </p>
+$else:
+    <p>
+    <form action="/game" method="POST">
+        - <input type="text" name="action"> <input type="SUBMIT">
+    </form>
+    </p>
