@@ -2,10 +2,71 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb320cd-b2a6-4a71-a2dd-9c994bcc701c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/app_tests.py" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/app_tests.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/tools.py" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/tools.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/bin/upload_store.py" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/bin/upload_store.py" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\0cb5266f135fbe5ad4f8eb5aa3bd7025a60885d7" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\141e959bea613ba29c6311f325d288402a16dc1b" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\145ca3bb862cbffe79d313acca17c09880042110" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\1a515a5e9b74a988526a16200a64414c69f8a648" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\1d758c3b4057e92344a44db7d34df5317d40c632" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\1ee0b210ab7f52838ee271d338a47a9ec97eb625" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\1f4ac29c50185d1a49ff0ffbbbe4b73048a800ae" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\2227513d58db893b6aeda3bff779d3a5f7ea82ac" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\24328ab4141cb1d87a00017537f2508b81d3b53e" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\295c7032f35cb39982a7411d67e28ce1b43b08ff" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\2b4b09eec6ab1682702e0314df89bd0b472cfd8a" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\2f14a48915ba79705c862d4ebdd16449d314a7f2" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\2f1af60957831352bc40b16eb3cb81b8869ab2fa" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\303f6a9986fb3e32f7080cb3dbf287605ad40914" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\340f7cb10fe570928d9d1d2a26d7ac127b832ff2" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\351abbc54dae3acb3e4596597748a84cb0986c51" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\3716b73e3010aea27cc3be7ff4e498726b0886c4" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\3865cfb198e9906658c058bb2e2181a26cec34d9" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\3895ce89e7ae4d4e7cbc2bc6d191260599a7bccb" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\3e0cf3d939eaf72e1f94bb817ee8742da223b09f" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\3fe5f9307fad12e33b7da0b41c989f05a9e97cc9" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\40e1a5ceb5f3f4b044cc0c431cdc50a53b37fcee" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\44bcb9e66e3f7b21ac967e6e41acfe580bb7484e" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\4955a649e63091ed3274c46c5b6e0a7769b364d5" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\49dfda8214a3e1e047f07e37353ffdbbfc889ada" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\4c2d956ab609333c874a684fb36bf1ab01aba835" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\5157553dba9864604a2017cf32dae153f6452c08" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\51abbdd19c51fa4c9106fda8f874f687c2b5b2dd" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\53406bbb531ef47b55e5549f7441c089582eca6d" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\57449c724d59894b076dd18da1c3983edd49d4ae" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\5e33883951f8693dae2a40be31043ccf997b64d8" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\66a1a8b425f06a3409838469820a8b461b286610" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\6acb93d619752d4e99186aa8644ef2ee74caf81d" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\6c796c2e1006db6a7115eee2e2a29d6fa5dc9729" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\6ca856205f7738d7435b733b487052b65837fd7f" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\6cdf0e1ccbdf2a9ac92209c76f179bd5de64a579" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\6f577b15c55972527b7aff21794b2a92a83145f4" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\73bb552497839974dfb5e6aed526b24785d19826" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\7968c6b83fa28b90e9e5041777260187f7c3974a" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\84294965b3d548bf21af3e0b5978c865582e76f9" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\9173cf42e64fbee35cb9dbb2429fbe73c63dd81b" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\91d6387f9975be94953a7de53c677a0dc676c2df" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\9740155bc5192e04c1c96ce5ce2fbce634931071" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\9c10ad4bd1063e35423514e58b0993c01d92997e" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\a0108c1b48a800c76d7d27e59c57c40e7e5a51fa" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\a58313496806446eb0165849b2383c5f541e5a33" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\ace4a02758c0c475a8e25d4909cce8c252b495ad" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\b1fdab1c533e4825bb8505ef6b11dcd0cee1f0e8" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\b40fc95e1a3f236cd970996f2d58395f08b77bc7" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\b50a7a0771ce2919c208709214750c8eafa6f7ff" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\b6e8b45b57820af3268a76b2aaa98a0dda5ee73c" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\bc0bb56e47767d811f4c323de7df7f977d7225d1" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\cd13df4a2d4b0bdec7a6ad44875622de93685827" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\d27d13f3df01c1730b22d58239ef5b82e061f1e0" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\d60c41afc2d5a7dabebaffa58a97ee5fb22d5cb0" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\d78ed0471081d4e423b4e97b10b2ff22d65c935c" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\de6b7cd7658a5389317f5ad093e9e37b48214e9a" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\e904c1758bfc7ca6610b5f94be0145d2491351b7" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\eb9bd33d7f3cb16fb8c459800c0749e531061406" afterPath="" />
+      <change type="DELETED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\sessions\febccd0d9e77267a6b441c9e230b23bdfb3c1e13" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/__init__.py" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\bin\app.py" afterPath="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app_backup.py" />
     </list>
     <ignored path="learn-python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,31 +111,7 @@
         <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/tools.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="map_tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/map_tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -92,11 +129,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="map_tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/map_tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3313783">
-              <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.33861387">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -104,11 +153,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/__init__.py">
+      <file leaf-file-name="app_tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="2" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -117,8 +178,8 @@
       <file leaf-file-name="show_room.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.821428">
-              <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+            <state vertical-scroll-proportion="-6.785714">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -127,8 +188,8 @@
       <file leaf-file-name="you_died.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/you_died.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3571428">
-              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.6785714">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -176,12 +237,14 @@
         <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/tools.py" />
         <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/app_tests.py" />
         <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/you_died.html" />
-        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/tools.py" />
-        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py" />
-        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html" />
         <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/__init__.py" />
         <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/gothonweb/map.py" />
+        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/__init__.py" />
+        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/tools.py" />
+        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app1.py" />
+        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html" />
         <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app.py" />
+        <option value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py" />
       </list>
     </option>
   </component>
@@ -193,8 +256,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="508" />
-    <option name="y" value="223" />
+    <option name="x" value="249" />
+    <option name="y" value="188" />
     <option name="width" value="1152" />
     <option name="height" value="692" />
   </component>
@@ -221,7 +284,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -601,6 +663,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -613,6 +676,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\bin" />
       <recent name="D:\github\learn-python\learn-python-the-hard-way\ex47\skeleton\ex47" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -705,7 +769,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="learn-python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app.py" />
+      <option name="SCRIPT_NAME" value="D:\github\learn-python\learn-python-the-hard-way\ex52\gothonweb\bin\app_backup.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -929,28 +993,28 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="508" y="223" width="1152" height="692" extended-state="0" />
-    <editor active="true" />
+    <frame x="249" y="188" width="1152" height="692" extended-state="1" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30311355" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30860806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18111753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3071161" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18111753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3071161" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1048,13 +1112,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/pyramid/test001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex35.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1300,14 +1357,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex43.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5719063">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex48/skeleton/tests/parser_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7307692">
@@ -1343,31 +1392,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex50/gothonweb/tests/app_tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6099707">
           <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex43.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5267327">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="2" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app_backup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="47" selection-start-line="59" selection-start-column="47" selection-end-line="59" selection-end-column="47" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/you_died.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3571428">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state vertical-scroll-proportion="-0.6785714">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.785714">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/gothonweb/map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1381,52 +1487,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/app_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/gothonweb/map.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="177" column="13" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/templates/show_room.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.821428">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learn-python-the-hard-way/ex52/gothonweb/bin/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3313783">
-          <caret line="52" column="54" selection-start-line="52" selection-start-column="54" selection-end-line="52" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.33861387">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
