@@ -4,6 +4,8 @@ from random import randint
 
 web.config.debug = False
 
+global session
+
 urls = (
   '/game', 'GameEngine',
   '/', 'Index',
@@ -19,6 +21,11 @@ if web.config.get('_session') is None:
     web.config._session = session
 else:
     session = web.config._session
+
+def session_hook():
+    web.ctx.session = session
+
+app.add_processor(web.loadhook(session_hook))
 
 render = web.template.render('templates/', base="layout")
 
@@ -48,7 +55,7 @@ class GameEngine(object):
         form = web.input(action=None)
 
         # there is a bug here, can you fix it?
-        if session.room and form.action:
+        if session.room and (form.action in session.room.paths):
             session.room = session.room.go(form.action)
             # try:
             #     int(form.action)
