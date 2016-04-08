@@ -1,0 +1,1891 @@
+2016-03-24 13:55:54,253 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-24 13:56:24,025 ERROR: Exception on /edit [POST] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in edit
+    db.session.commit()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\scoping.py", line 150, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 788, in commit
+    self.transaction.commit()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 384, in commit
+    self._prepare_impl()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 364, in _prepare_impl
+    self.session.flush()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 1985, in flush
+    self._flush(objects)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2103, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2067, in _flush
+    flush_context.execute()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 372, in execute
+    rec.execute(self)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 526, in execute
+    uow
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 60, in save_obj
+    mapper, table, update)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 518, in _emit_update_statements
+    execute(statement, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 841, in execute
+    return meth(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\sql\elements.py", line 322, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 938, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1070, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1271, in _handle_dbapi_exception
+    exc_info
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1063, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\default.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (IntegrityError) column nickname is not unique u'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?' (u'dup', u'', 2)
+2016-03-24 13:56:38,451 ERROR: Exception on /edit [POST] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in edit
+    db.session.commit()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\scoping.py", line 150, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 788, in commit
+    self.transaction.commit()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 384, in commit
+    self._prepare_impl()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 364, in _prepare_impl
+    self.session.flush()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 1985, in flush
+    self._flush(objects)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2103, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2067, in _flush
+    flush_context.execute()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 372, in execute
+    rec.execute(self)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 526, in execute
+    uow
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 60, in save_obj
+    mapper, table, update)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 518, in _emit_update_statements
+    execute(statement, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 841, in execute
+    return meth(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\sql\elements.py", line 322, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 938, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1070, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1271, in _handle_dbapi_exception
+    exc_info
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1063, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\default.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (IntegrityError) column nickname is not unique u'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?' (u'dup', u'', 2)
+2016-03-24 14:49:30,858 ERROR: Exception on /edit [POST] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in edit
+    db.session.add(g.user)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\scoping.py", line 150, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 788, in commit
+    self.transaction.commit()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 384, in commit
+    self._prepare_impl()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 364, in _prepare_impl
+    self.session.flush()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 1985, in flush
+    self._flush(objects)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2103, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2067, in _flush
+    flush_context.execute()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 372, in execute
+    rec.execute(self)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 526, in execute
+    uow
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 60, in save_obj
+    mapper, table, update)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 518, in _emit_update_statements
+    execute(statement, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 841, in execute
+    return meth(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\sql\elements.py", line 322, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 938, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1070, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1271, in _handle_dbapi_exception
+    exc_info
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1063, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\default.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (IntegrityError) column nickname is not unique u'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?' (u'dup', u'', 2)
+2016-03-24 14:49:46,578 ERROR: Exception on /edit [POST] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in edit
+    db.session.add(g.user)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\scoping.py", line 150, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 788, in commit
+    self.transaction.commit()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 384, in commit
+    self._prepare_impl()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 364, in _prepare_impl
+    self.session.flush()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 1985, in flush
+    self._flush(objects)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2103, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\session.py", line 2067, in _flush
+    flush_context.execute()
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 372, in execute
+    rec.execute(self)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\unitofwork.py", line 526, in execute
+    uow
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 60, in save_obj
+    mapper, table, update)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\orm\persistence.py", line 518, in _emit_update_statements
+    execute(statement, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 841, in execute
+    return meth(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\sql\elements.py", line 322, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 938, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1070, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1271, in _handle_dbapi_exception
+    exc_info
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\util\compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\base.py", line 1063, in _execute_context
+    context)
+  File "C:\Python27\lib\site-packages\sqlalchemy-0.9.9-py2.7.egg\sqlalchemy\engine\default.py", line 442, in do_execute
+    cursor.execute(statement, parameters)
+IntegrityError: (IntegrityError) column nickname is not unique u'UPDATE user SET nickname=?, about_me=? WHERE user.id = ?' (u'dup', u'', 2)
+2016-03-24 14:49:53,941 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-24 14:54:36,427 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-24 15:31:50,927 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-24 17:27:56,026 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:01:14,250 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:08:00,795 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:10:25,229 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:11:34,697 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:12:56,842 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:13:40,184 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 09:14:24,694 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 10:25:03,009 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-25 11:31:50,397 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 14:19:31,834 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 15:57:12,299 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 17:44:59,638 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 38, in index
+    @oid.loginhandler
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:45:19,961 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 17:45:20,641 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:45:27,851 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:45:31,447 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:48:22,104 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 6, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:51:23,108 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:51:25,483 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:51:32,387 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:51:39,153 ERROR: Exception on / [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:51:54,262 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 17:51:56,971 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 17:54:10,486 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 17:54:18,279 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ forms.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'forms' is undefined
+2016-03-29 17:54:19,832 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ forms.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'forms' is undefined
+2016-03-29 17:58:54,089 ERROR: Exception on / [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 17:58:58,970 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:00:12,971 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:00:14,477 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:00:15,352 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:00:16,342 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:00:25,957 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 18:00:33,321 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:02:18,056 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:02:19,601 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:02:20,573 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:02:23,503 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:02:26,578 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:02:55,417 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:03:01,717 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 18:03:02,796 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:03:03,795 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:04:17,612 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:04:19,242 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 7, in block "content"
+    {{ form.hidden_tag() }}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'form' is undefined
+2016-03-29 18:04:29,812 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 18:04:30,967 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 13, in block "content"
+    {% for error in form.error.post %}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'app.forms.PostForm object' has no attribute 'error'
+2016-03-29 18:04:32,500 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 13, in block "content"
+    {% for error in form.error.post %}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'app.forms.PostForm object' has no attribute 'error'
+2016-03-29 18:04:35,559 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 13, in block "content"
+    {% for error in form.error.post %}
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 408, in getattr
+    return getattr(obj, attribute)
+UndefinedError: 'app.forms.PostForm object' has no attribute 'error'
+2016-03-29 18:08:23,657 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 18:08:25,536 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:08:26,884 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:10:13,118 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:10:33,631 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:12:29,451 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:14:47,434 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:14:49,221 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:14:52,857 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 35, in index
+    'body': 'Beautiful day in Portland!'
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-29 18:15:07,533 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 18:15:58,285 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-29 18:16:03,267 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 45, in index
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 27, in top-level template code
+    {% block content %}{% endblock %}
+  File "D:\github\learn-python\microblog\app\templates\index.html", line 25, in block "content"
+    {% for post in posts %}
+TypeError: 'instancemethod' object is not iterable
+2016-03-30 09:45:26,131 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 09:53:14,470 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:05:02,046 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:12:40,354 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:13:13,463 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:18:59,331 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:22:50,200 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:46:44,283 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:47:21,525 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 10:47:30,470 ERROR: Exception on /login [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_openid.py", line 507, in decorated
+    openid_response, self.extension_responses))
+  File "D:\github\learn-python\microblog\app\views.py", line 85, in after_login
+    db.session.add(user.follow(u))
+  File "D:\github\learn-python\microblog\app\models.py", line 59, in follow
+    if not self.is_following(user):
+  File "D:\github\learn-python\microblog\app\models.py", line 69, in is_following
+    return self.followed.filter(followers.c.followed_id == user.id).count() > 0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2016-03-30 10:48:06,339 ERROR: Exception on /login [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_openid.py", line 507, in decorated
+    openid_response, self.extension_responses))
+  File "D:\github\learn-python\microblog\app\views.py", line 85, in after_login
+    remember_me = session['remember_me']
+  File "D:\github\learn-python\microblog\app\models.py", line 59, in follow
+    if not self.is_following(user):
+  File "D:\github\learn-python\microblog\app\models.py", line 69, in is_following
+    return self.followed.filter(followers.c.followed_id == user.id).count() > 0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2016-03-30 10:48:29,971 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 11:06:25,178 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 11:06:26,161 ERROR: Exception on /user/David2 [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 102, in user
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:06:27,819 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:06:29,168 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:07:40,477 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:07:41,726 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:08:14,272 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:10:34,207 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    flash('Your post is now live!')
+NameError: global name 'page' is not defined
+2016-03-30 11:10:35,332 ERROR: Exception on /index [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 31, in index
+    flash('Your post is now live!')
+NameError: global name 'page' is not defined
+2016-03-30 11:11:01,770 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 11:11:37,971 ERROR: Exception on /user/David2 [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in user
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:11:41,345 ERROR: Exception on /user/David2 [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in user
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:12:15,644 ERROR: Exception on /user/David2 [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 104, in user
+    posts = g.user.followed_posts().paginate(page, POSTS_PER_PAGE, False)
+NameError: global name 'page' is not defined
+2016-03-30 11:24:19,309 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 11:27:50,766 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 11:29:39,025 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 14:42:06,308 INFO: microblog startup [in app\__init__.py:29]
+2016-03-30 14:48:21,082 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 14:53:36,086 INFO: microblog startup [in app\__init__.py:29]
+2016-03-30 15:18:38,796 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 15:18:41,938 ERROR: Exception on /user/Da [GET] [in C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py:1423]
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Python27\lib\site-packages\flask_login.py", line 792, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\github\learn-python\microblog\app\views.py", line 109, in user
+    posts = posts)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 128, in render_template
+    context, ctx.app)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\templating.py", line 110, in _render
+    rv = template.render(context)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 989, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Python27\lib\site-packages\jinja2\environment.py", line 754, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\github\learn-python\microblog\app\templates\user.html", line 2, in top-level template code
+    {% extends "base.html" %}
+  File "D:\github\learn-python\microblog\app\templates\base.html", line 14, in top-level template code
+    | <form style="display: inline;" action="{{url_for('search')}}" method="post" name="search">{{g.search_form.hidden_tag()}}{{g.search_form.search(size=20)}}<input type="submit" value="Search"></form>
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\helpers.py", line 312, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\app.py", line 1641, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Python27\lib\site-packages\flask-0.10.1-py2.7.egg\flask\helpers.py", line 305, in url_for
+    force_external=external)
+  File "C:\Python27\lib\site-packages\werkzeug-0.10.4-py2.7.egg\werkzeug\routing.py", line 1678, in build
+    raise BuildError(endpoint, values, method)
+BuildError: ('search', {}, None)
+2016-03-30 15:27:26,062 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 15:37:30,078 INFO: microblog startup [in app\__init__.py:29]
+2016-03-30 15:43:55,783 INFO: microblog startup [in app\__init__.py:29]
+2016-03-30 16:08:48,917 INFO: microblog startup [in app\__init__.py:29]
+2016-03-30 16:12:08,286 INFO: microblog startup [in app\__init__.py:29]
+2016-03-30 16:14:14,101 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:16:00,605 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:17:42,602 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:19:52,483 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:21:52,413 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:33:09,331 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:46:50,894 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 16:57:24,345 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 17:03:34,405 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 17:20:34,640 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 17:32:34,157 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 17:34:52,966 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 17:38:41,767 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-30 17:39:35,605 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:31:36,934 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:32:32,582 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:34:18,696 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:34:50,697 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:40:21,410 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:44:07,186 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:44:55,193 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:50:26,621 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:53:54,986 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:54:25,359 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 09:54:35,198 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:03:24,217 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:03:38,426 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:14:21,884 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:16:44,759 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:17:41,585 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:18:39,482 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:19:17,145 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:20:49,400 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:23:47,618 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:27:41,490 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:28:30,078 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:30:18,063 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 10:33:51,676 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:29]
+2016-03-31 11:02:15,322 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
+2016-03-31 11:10:32,513 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
+2016-03-31 11:16:35,312 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
+2016-03-31 11:17:54,892 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
+2016-04-05 11:42:52,644 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
+2016-04-05 11:55:06,533 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
+2016-04-05 12:01:11,377 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:31]
