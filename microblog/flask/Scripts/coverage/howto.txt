@@ -1,0 +1,99 @@
+* Release checklist
+
+- Test on:
+    - Windows
+    - Ubuntu
+    - Mac
+    - Pythons 2.3, 2.4, 2.5, 2.6, 2.7, 3.1, 3.2
+- Version number in coverage/__init__.py
+    - 3.1a1, 3.1b1, 3.1c1, 3.1
+- Update CHANGES.txt, including release date.
+- Update docstring in setup.py, including "New in x.y:"
+- Update docs
+    - Version, date, and changes in doc/changes.rst
+    - Version and date in doc/index.rst
+    - Version and copyright date in doc/conf.py
+    - Version --version output in doc/install.rst
+    - Generate new sample_html to get the latest, incl footer version number:
+        cd C:\ned\cog\trunk
+        rmdir/s/q htmlcov
+        coverage run --branch --source=cogapp -m cogapp.test_cogapp CogTestsInMemory
+        coverage html
+        - IF BETA:
+            copy/y htmlcov\*.* C:\ned\coverage\trunk\doc\sample_html_beta
+        - ELSE:
+            copy/y htmlcov\*.* C:\ned\coverage\trunk\doc\sample_html
+    - IF BETA:
+        - Build and publish docs:
+            $ make publishbeta
+    - ELSE:
+        - Build and publish docs:
+            $ make publish
+- Kits:
+    - source .tgz and windows .exe for each Python
+        - $ allkits.cmd
+- Update PyPi:
+    - $ make pypi
+    - upload the kits:
+        - $ allkits.cmd upload
+        # note: this seems to try to upload each file twice, so you'll have a
+        # successful upload, then a failure, but the file gets there.
+    - Visit http://pypi.python.org/pypi?%3Aaction=pkg_edit&name=coverage :
+        - show/hide the proper versions.
+- Tag the tree
+    - hg tag -m "Coverage 3.0.1" coverage-3.0.1
+- Update nedbatchelder.com
+    - Edit webfaction.htaccess to make sure the proper versions are mapped to /beta
+    - Blog post?
+- Update bitbucket:
+    - Issue tracker should get new version number in picker.
+    # Note: don't delete old version numbers: it marks changes on the tickets
+    # with that number.
+- Announce on coveragepy-announce@googlegroups.com .
+- Announce on TIP.
+- Ask Christophe Zwerschke (cito@online.de) to build win64 kits.
+
+
+* Making virtualenvs on Windows
+
+- cd c:\vpy\coverage
+- \py32\xx\python ..\virtualenv.py xx
+- copy ..\distutils.cfg xx\Lib\distutils
+- cd nose_source_directory_someplace
+- \vpy\coverage\xx\Scripts\python.exe setup.py install
+
+
+* Building
+
+- Install fixtar on any Windows Python used to make source kits: http://bitbucket.org/ned/fixtar
+- Create PythonXX\Lib\distutils\distutils.cfg::
+    [build]
+    compiler = mingw32
+
+* Testing
+
+(automate these someday)
+
+- On Py 2.x: need setuptools installed
+- On Py 3.x: need Distribute installed
+- Need nose installed
+- Need to have coverage dev-installed
+- In each Python installation to be used, create a "coverage_test_egg.pth"
+  containing::
+
+    c:\ned\coverage\trunk\test\eggsrc\dist\covtestegg1-0.0.0-py2.5.egg
+
+  (or equivalent).
+
+  These go in c:\python26\lib\site-packages or
+  /usr/local/lib/python2.6/dist-packages, for example.
+
+- For complete coverage testing, in each Python installation, create a
+  "zzz_coverage_process_start.pth" containing::
+
+    import coverage; coverage.process_startup()
+
+- To run the Javascript tests:
+
+    open test/js/index.html in variety of browsers.
+

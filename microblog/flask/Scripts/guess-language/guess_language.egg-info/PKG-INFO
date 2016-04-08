@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: guess-language
+Version: 1.0.0
+Summary: A library to guess the natural language of some text.
+Home-page: http://code.google.com/p/guess-language
+Author: David Schoonover
+Author-email: dsc@less.ly
+License: UNKNOWN
+Description: 
+                Attempts to determine the natural language of a selection of Unicode (utf-8) text.
+                
+                Based on guesslanguage.cpp by Jacob R Rideout for KDE which itself is based on Language::Guess by Maciej Ceglowski.
+            
+Platform: UNKNOWN

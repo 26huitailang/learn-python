@@ -1,0 +1,4 @@
+include COPYING.txt
+include README.md
+recursive-include guess_language *.txt
+recursive-include guess_language/trigrams *
