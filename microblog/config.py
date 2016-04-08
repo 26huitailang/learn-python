@@ -37,5 +37,5 @@ MAX_SEARCH_RESULTS = 50
 # available languages
 LANGUAGES = {
     'en': 'English',
-    'es': 'Español'
+    'zh-Hans-CN ': 'Chinese'
 }
