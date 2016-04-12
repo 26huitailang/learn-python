@@ -1,5 +1,5 @@
 from app import app, db, lm, oid
-from flask import render_template, flash, redirect, session, url_for, request, g
+from flask import render_template, flash, redirect, session, url_for, request, g,jsonify
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from forms import LoginForm, EditForm, PostForm, SearchForm
 from models import User, Post
@@ -9,6 +9,8 @@ from emails import follower_notification
 from flask.ext.babel import gettext
 from app import babel
 from config import LANGUAGES
+from guess_language import guessLanguage
+from translate import microsoft_translate
 
 @app.before_request
 def before_request():
@@ -35,7 +37,13 @@ def get_locale():
 def index(page = 1):
     form = PostForm()
     if form.validate_on_submit():
-        post = Post(body=form.post.data, timestamp=datetime.utcnow(), author=g.user)
+        language = guessLanguage(form.post.data)
+        if language == 'UNKNOWN' or len(language) > 5:
+            language = ''
+        post = Post(body=form.post.data,
+                    timestamp=datetime.utcnow(),
+                    author=g.user,
+                    language=language)
         db.session.add(post)
         db.session.commit()
         flash(gettext('Your post is now live!'))
@@ -186,3 +194,26 @@ def search_results(query):
                            query=query,
                            results=results)
 
+@app.route('/translate', methods = ['POST'])
+@login_required
+def translate():
+    return jsonify({
+        'text': microsoft_translate(
+            request.form['text'],
+            request.form['sourceLang'],
+            request.form['destLang']) })
+
+@app.route('/delete/<int:id>')
+@login_required
+def delete(id):
+    post = Post.query.get(id)
+    if post == None:
+        flash('Post not found.')
+        return redirect(url_for('index'))
+    if post.author.id != g.user.id:
+        flash('You cannot delete this post.')
+        return redirect(url_for('index'))
+    db.session.delete(post)
+    db.session.commit()
+    flash('Your post has been deleted.')
+    return redirect(url_for('index'))

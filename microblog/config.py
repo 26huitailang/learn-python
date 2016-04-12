@@ -37,5 +37,9 @@ MAX_SEARCH_RESULTS = 50
 # available languages
 LANGUAGES = {
     'en': 'English',
-    'zh-Hans-CN ': 'Chinese'
+    'zn-Hans-CN': 'Chinese'
 }
+
+# microsoft translation service
+MS_TRANSLATOR_CLIENT_ID = '26huitailang' # enter your MS translator app id here
+MS_TRANSLATOR_CLIENT_SECRET = 'yQF6yr+T7Pf1ew57r+6xsZLrDkan70vusGlGvFn2bp8=' # enter your MS translator app secret here
