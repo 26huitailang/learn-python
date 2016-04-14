@@ -3420,3 +3420,4 @@ Traceback (most recent call last):
   File "C:\Python27\Lib\json\decoder.py", line 384, in raw_decode
     raise ValueError("No JSON object could be decoded")
 ValueError: No JSON object could be decoded
+2016-04-13 15:53:26,089 INFO: microblog startup [in D:\github\learn-python\microblog\app\__init__.py:58]
