@@ -1,16 +1,7 @@
-def ch_out(characters):
-    chs = ''
-    l = len(characters)/2
-    n = 0
-    while n <= l:
-        chs += characters[n]
-        n += 2
-    return chs
-
 t = int(input())
-
-while t > 0:
-    ch_in = raw_input()
-    chs = ch_out(ch_in)
-    print chs
-    t -= 1
+for i in range(t):
+    ss = ''
+    s = raw_input()
+    for j in range(0, int(len(s) / 2), 2):
+        ss += s[j]
+    print ss
