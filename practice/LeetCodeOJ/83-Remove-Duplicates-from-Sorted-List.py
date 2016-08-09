@@ -13,7 +13,7 @@ class Solution(object):
         :rtype: ListNode
         """
         cur = head
-        while cur.next != None and cur != None:
+        while cur != None and cur.next != None:
             if cur.val == cur.next.val:
                 cur.next = cur.next.next
             else:
