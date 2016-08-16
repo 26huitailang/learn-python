@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table, th , td {
+          border: 1px solid grey;
+          border-collapse: collapse;
+          padding: 5px;
+        }
+        table tr:nth-child(odd) {
+          background-color: #f1f1f1;
+        }
+        table tr:nth-child(even) {
+          background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="customersController">
+    <table>
+        <tr ng-repeat="x in names | orderBy:'Country'">
+            <td>{{ x.Name }}</td>
+            <td>{{ x.Country | uppercase }}</td>
+        </tr>
+    </table>
+</div>
+
+<script src="angular.min.js"></script>
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('customersController', function($scope, $http) {
+        $http.get("Customers_JSON.json")
+        .success(function (response) {$scope.names = response;});
+    });
+</script>
+</body>
+</html>

@@ -10,9 +10,13 @@ Here are some bacis knowledge with links:
 
 **write down what to do here**
 
-###python for data analysis
+##python for data analysis
   basic things
 
-###liaoxuefeng's tutorials
+##liaoxuefeng's tutorials
 
 [regular-expression] (http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000/001386832260566c26442c671fa489ebc6fe85badda25cd000#0)
+
+## AngularJS Learn
+[W3CSchool](http://www.w3cschool.cn/angularjs/angularjs-controllers.html)
+
