@@ -53,15 +53,27 @@ class BasicTextParser(Parser):
 handler = HTMLRenderer()
 parser = BasicTextParser(handler)
 
-parser.parse(sys.stdin)
+# parser.parse(sys.stdin)
 # 执行： python markup.py < test_input.txt > test_output2.html
 
+
 # 自动转换
-# def main():
-#     f = open('test_output.html', 'wb')
-#     f.write(parser.parse(sys.stdin))
-#     f.close()
-#
-# if __name__ == '__main__':
-#     main()
+def main():
+    try:
+        file = open('test_input.txt', 'r')
+        f = open('test_output.html', 'w')
+        oldStdout = sys.stdout
+        sys.stdout = f # 把文件对象赋给sys.stdout，输出的对象为文件对象的write方法
+        parser.parse(file)
+    finally:
+        if file:
+            file.close()
+        if f:
+            f.close()
+        if oldStdout:
+            sys.stdout = oldStdout
+    print "Markup finished!"
+
+if __name__ == '__main__':
+    main()
 

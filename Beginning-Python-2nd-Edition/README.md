@@ -2,7 +2,11 @@
 
 ## Project1-Instant-Markup
 page-339
-- 20.5完成
+- 完成
+
+## Project2-Painting-a-Pretty-Picture
+page-356
+
 
 
 
