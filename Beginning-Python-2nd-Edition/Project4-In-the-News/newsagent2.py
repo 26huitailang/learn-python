@@ -156,7 +156,7 @@ def runDefaultSetup():
     agent = NewsAgent()
 
     # 从BBC新闻站获取新闻的SimpleWebSource:
-    # bbc_url = 'http://news.bbc.co.uk/text_only.stm'  # wiki，15年BBC取消了text only页面，改用自适应页面
+    # bbc_url = 'http://news.bbc.co.uk/text_only.stm'  # wiki，15年BBC取消了text only页面，改用响应式页面
     # bbc_title = r'(?s)a href="[^"]*">\s*<b>\s*(.*?)\s*</b>'
     # bbc_body = r'(?s)</a>\s*<br />\s*(.*?)\s*<'
     # bbc = SimpleWebSource(bbc_url, bbc_title, bbc_body)
