@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb320cd-b2a6-4a71-a2dd-9c994bcc701c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-3.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-4.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-5.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/AfterUnclass.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense - 副本.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-bychar.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learn-python.iws" />
@@ -50,91 +54,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch16-Test/tests.py">
+      <file leaf-file-name="DelLines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="114">
+              <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my_math.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch16-Test/my_math.py">
+      <file leaf-file-name="processprac.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="321">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="16-3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch16-Test/16-3.py">
+      <file leaf-file-name="test-bychar.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-bychar.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test-byline.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1159">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnclassifiedLicense.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14-1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14-2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="meizitu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/practice/spider/meizitu/meizitu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14-3.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-3.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14-4.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-4.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="14-5.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-5.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,13 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/customersCtrl2.html" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/customersCtrl.html" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/personController.js" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/nameController.js" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/index2.html" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/validatian-example.html" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/index.html" />
         <option value="$PROJECT_DIR$/Angular/W3CSchool/myApp.js" />
         <option value="$PROJECT_DIR$/Angular/W3CSchool/myUsers.js" />
         <option value="$PROJECT_DIR$/Angular/W3CSchool/bootstrap.html" />
@@ -209,6 +166,13 @@
         <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-3.py" />
         <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-2.py" />
         <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-5.py" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense - 副本.txt" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense.txt" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/AfterUnclass.txt" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/bychar.py" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-bychar.txt" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py" />
       </list>
     </option>
   </component>
@@ -266,6 +230,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -316,10 +282,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learn-python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learn-sth-everyday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beginning-Python-2nd-Edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ch11-Files-and-Stuff" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,19 +316,19 @@
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn-sth-everyday\Beginning-Python-2nd-Edition\Ch11-Files-and-Stuff" />
+      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project1-Instant-Markup" />
+      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition" />
+      <recent name="D:\learn-sth-everyday\Angular\W3CSchool" />
+      <recent name="D:\github\learn-python\microblog" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project2-Painting-a-Pretty-Picture" />
       <recent name="D:\github\learn-python\microblog\app" />
       <recent name="D:\github\learn-python\microblog" />
       <recent name="D:\github\learn-python\liaoxuefeng\templates" />
       <recent name="D:\github\learn-python\learn-python-the-hard-way\ex47\skeleton\ex47" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project1-Instant-Markup" />
-      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition" />
-      <recent name="D:\learn-sth-everyday\Angular\W3CSchool" />
-      <recent name="D:\github\learn-python\microblog" />
-      <recent name="D:\github\learn-python\learn-python-the-hard-way\ex50\gothonweb\tests" />
     </key>
   </component>
   <component name="RunManager" selected="Python.strhh">
@@ -888,7 +870,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477303325864</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="CH14">
+      <created>1477989810814</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1477989810814</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -904,14 +893,14 @@
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33777776" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34555554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771537" sideWeight="0.49596775" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121453" sideWeight="0.5777778" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31989247" sideWeight="0.4798387" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32236096" sideWeight="0.44555557" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32236096" sideWeight="0.44555557" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38365495" sideWeight="0.42222223" order="10" side_tool="false" content_ui="tabs" x="955" y="-27" width="970" height="1072" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38365495" sideWeight="0.42222223" order="10" side_tool="false" content_ui="tabs" x="955" y="-27" width="970" height="1072" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -954,7 +943,8 @@
     <MESSAGE value="Project 4newsagent1" />
     <MESSAGE value="Project 4 newsagent2" />
     <MESSAGE value="CH15" />
-    <option name="LAST_COMMIT_MESSAGE" value="CH15" />
+    <MESSAGE value="CH14" />
+    <option name="LAST_COMMIT_MESSAGE" value="CH14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1055,68 +1045,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice/LeetCodeOJ/371-!Sum-of-Two-Integers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/LeetCodeOJ/104-Maximum-Depth-of-Binary-Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/LeetCodeOJ/226-Invert-Binary-Tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Angular/W3CSchool/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pythonchallenge/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state>
-          <first_editor relative-caret-position="0">
-            <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="50" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state>
-          <first_editor relative-caret-position="0">
-            <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/handlers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="60" column="19" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/practice/closure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1326,7 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3002">
           <caret line="158" column="90" selection-start-line="158" selection-start-column="90" selection-end-line="158" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1341,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2337">
           <caret line="123" column="8" selection-start-line="123" selection-start-column="8" selection-end-line="123" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1349,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1357,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1387,7 +1311,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
+        <state relative-caret-position="0">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
@@ -1395,7 +1319,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/practice/spider/meizitu/meizitu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
+        <state relative-caret-position="494">
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding />
         </state>
@@ -1405,7 +1329,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="659" column="12" selection-start-line="659" selection-start-column="12" selection-end-line="659" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,6 +1360,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense - 副本.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/AfterUnclass.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1198">
+          <caret line="10921" column="0" selection-start-line="10921" selection-start-column="0" selection-end-line="10921" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.1/system/python_stubs/2129268673/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1930" column="61" selection-start-line="1930" selection-start-column="61" selection-end-line="1930" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-bychar.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1159">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
           <folding />
         </state>
       </provider>
