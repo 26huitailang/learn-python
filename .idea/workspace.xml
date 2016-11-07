@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cb320cd-b2a6-4a71-a2dd-9c994bcc701c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/AfterUnclass.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense - 副本.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/UnclassifiedLicense.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-bychar.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/chatserver.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/simple_chat.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learn-python.iws" />
@@ -54,7 +50,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DelLines.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DelLines.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
@@ -64,10 +60,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="processprac.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="14-1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="14-2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="processprac.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
+            <state relative-caret-position="475">
               <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
               <folding />
             </state>
@@ -87,7 +103,7 @@
       <file leaf-file-name="test-byline.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1159">
+            <state relative-caret-position="95">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding />
             </state>
@@ -99,6 +115,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple_chat.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/simple_chat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="49" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,9 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/myApp.js" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/myUsers.js" />
-        <option value="$PROJECT_DIR$/Angular/W3CSchool/bootstrap.html" />
         <option value="$PROJECT_DIR$/Angular/Official-tutorial/README.md" />
         <option value="$PROJECT_DIR$/practice/LeetCodeOJ/226-Invert-Binary-Tree.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -173,6 +196,9 @@
         <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/bychar.py" />
         <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-bychar.txt" />
         <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/client.py" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/server.py" />
+        <option value="$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/chatserver.py" />
       </list>
     </option>
   </component>
@@ -230,8 +256,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,6 +302,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Project5-A-Virtual-Tea-Party" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learn-python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learn-sth-everyday" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Beginning-Python-2nd-Edition" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Ch14-Web-Programming" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -302,6 +344,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,19 +360,19 @@
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\learn-sth-everyday\Beginning-Python-2nd-Edition\Ch11-Files-and-Stuff" />
-      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project1-Instant-Markup" />
-      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition" />
-      <recent name="D:\learn-sth-everyday\Angular\W3CSchool" />
-      <recent name="D:\github\learn-python\microblog" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project2-Painting-a-Pretty-Picture" />
       <recent name="D:\github\learn-python\microblog\app" />
       <recent name="D:\github\learn-python\microblog" />
       <recent name="D:\github\learn-python\liaoxuefeng\templates" />
       <recent name="D:\github\learn-python\learn-python-the-hard-way\ex47\skeleton\ex47" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project5-A-Virtual-Tea-Party" />
+      <recent name="D:\learn-sth-everyday\Beginning-Python-2nd-Edition\Ch11-Files-and-Stuff" />
+      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition\Project1-Instant-Markup" />
+      <recent name="G:\learn-sth-everyday\Beginning-Python-2nd-Edition" />
+      <recent name="D:\learn-sth-everyday\Angular\W3CSchool" />
     </key>
   </component>
   <component name="RunManager" selected="Python.strhh">
@@ -877,7 +921,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477989810814</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="CH11 files input and output">
+      <created>1478253553807</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1478253553807</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -893,27 +944,27 @@
     <frame x="960" y="0" width="960" height="1040" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34555554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35333332" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771537" sideWeight="0.49596775" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121453" sideWeight="0.5777778" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31989247" sideWeight="0.4798387" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3197279" sideWeight="0.4798387" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32236096" sideWeight="0.44555557" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17977528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38365495" sideWeight="0.42222223" order="10" side_tool="false" content_ui="tabs" x="955" y="-27" width="970" height="1072" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31882024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17977528" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771537" sideWeight="0.49596775" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31882024" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -944,7 +995,9 @@
     <MESSAGE value="Project 4 newsagent2" />
     <MESSAGE value="CH15" />
     <MESSAGE value="CH14" />
-    <option name="LAST_COMMIT_MESSAGE" value="CH14" />
+    <MESSAGE value="CH11 files input and output" />
+    <MESSAGE value="chatserver-class ChatRoom" />
+    <option name="LAST_COMMIT_MESSAGE" value="chatserver-class ChatRoom" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1040,46 +1093,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="62" />
+      <option name="time" value="63" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/practice/closure.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/practice/SPOJ-basics/strhh.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/Ms-PL.txt.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/Ms-PL.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/simple_markup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/rules.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1289,7 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1297,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1305,15 +1321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1321,7 +1328,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1336,15 +1342,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,7 +1349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="36" selection-start-line="0" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1368,15 +1363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1384,7 +1370,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1198">
           <caret line="10921" column="0" selection-start-line="10921" selection-start-column="0" selection-end-line="10921" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,7 +1399,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1159">
+        <state relative-caret-position="95">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
@@ -1422,8 +1407,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/processprac.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
+        <state relative-caret-position="475">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/asyncore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="520" column="57" selection-start-line="520" selection-start-column="57" selection-end-line="520" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/simple_chat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="49" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Anaconda2/Lib/site-packages/py/_code/source.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="71" column="50" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/chatserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="66" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
           <folding />
         </state>
       </provider>
