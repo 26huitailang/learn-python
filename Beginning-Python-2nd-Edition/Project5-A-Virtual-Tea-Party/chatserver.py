@@ -7,7 +7,10 @@ import asyncore
 
 PORT = 5005
 NAME = 'TestChat'
-class EndSession(Exception): pass
+
+
+class EndSession(Exception):
+    pass
 
 
 class CommandHandler:
@@ -16,12 +19,13 @@ class CommandHandler:
     """
 
     def unknown(self, session, cmd):
-        '响应未知命令'
+        # '响应未知命令'
         session.push('Unknown command: %s\r\n' % cmd)
 
     def handle(self, session, line):
-        '处理从给定的会话中接收到的行。'
-        if not line.strip(): return
+        # 处理从给定的会话中接收到的行。
+        if not line.strip():
+            return
         # 分离命令：
         parts = line.split(' ', 1)
         cmd = parts[0]
@@ -49,20 +53,20 @@ class Room(CommandHandler):
         self.sessions = []
 
     def add(self, session):
-        '一个会话（用户）已进入房间'
+        # 一个会话（用户）已进入房间
         self.sessions.append(session)
 
     def remove(self, session):
-        '一个会话（用户）已经离开房间'
+        # 一个会话（用户）已经离开房间
         self.sessions.remove(session)
 
     def broadcast(self, line):
-        '向房间中的所有会话发送一行'
+        # '向房间中的所有会话发送一行'
         for session in self.sessions:
             session.push(line)
 
     def do_logout(self, session, line):
-        '响应logout命令'
+        # '响应logout命令'
         raise EndSession
 
 
@@ -108,11 +112,43 @@ class ChatRoom(Room):
         self.server.users[session.name] = session
         Room.add(self, session)
 
+    def remove(self, session):
+        Room.remove(self, session)
+        # 告诉所有人有用户离开：
+        self.broadcast(session.name + ' has left the room.\r\n')
+
+    def do_say(self, session, line):
+        self.broadcast(session.name+': '+line+'\r\n')
+
+    def do_look(self, session, line):
+        # 处理look命令，该命令用于查看谁在房间内
+        session.push('The following are in this room:\r\n')
+        for other in self.sessions:
+            session.push(other.name + '\r\n')
+
+    def do_who(self, session, line):
+        # 处理who命令，用于查看谁登录了
+        session.push('The following are logged in:\r\n')
+        for name in self.server.users:
+            session.push(name + '\r\n')
+
+
+class LogoutRoom(Room):
+    """
+    为单用户准备的简单房间。只用于将用户名从服务器中移除。
+    """
+
+    def add(self, session):
+        # 当会话（用户）进入要删除的LogoutRoom时
+        try:
+            del self.server.users[session.name]
+        except KeyError:
+            pass
 
 
 class ChatSession(async_chat):
     """
-    处理服务器和一个用户之间连接的类。
+    单会话，负责和用户通信。
     """
     def __init__(self, server, sock):
         # 标准设置任务：
@@ -120,8 +156,20 @@ class ChatSession(async_chat):
         self.server = server
         self.set_terminator('\r\n')
         self.data = []
-        # 问候用户：
-        self.push('Welcome to %s\r\n' % self.server.name)
+        # 所有会话都开始于单独的LoginRoom中：
+        self.enter(LoginRoom(server))
+
+    def enter(self, room):
+        # 从当前房间移除自身（self），并且将自身添加到
+        # 下一个房间···
+        try:
+            cur = self.room
+        except AttributeError:
+            pass
+        else:
+            cur.remove(self)
+        self.room = room
+        room.add(self)
 
     def collect_incoming_data(self, data):
         self.data.append(data)
@@ -132,16 +180,20 @@ class ChatSession(async_chat):
         """
         line = ''.join(self.data)
         self.data = []
-        self.server.broadcast(line)
+        try:
+            self.room.handle(self, line)
+        except EndSession:
+            self.handle_close()
 
     def handle_close(self):
         async_chat.handle_close(self)
-        self.server.disconnect(self)
+        self.enter(LogoutRoom(self.server))
 
 
 class ChatServer(dispatcher):
     """
     接受连接并且产生单个会话的类。它还会处理到其他会话的广播。
+    只有一个房间的聊天服务器。
     """
     def __init__(self, port, name):
         # Standard setup tasks
@@ -151,19 +203,13 @@ class ChatServer(dispatcher):
         self.bind(('', port))  # ''表示本机或所有接口
         self.listen(5)
         self.name = name
+        self.users = {}
         self.sessions = []
-
-    def disconnect(self, session):
-        self.sessions.remove(session)
-
-    def broadcast(self, line):
-        for session in self.sessions:
-            session.push(line + '\r\n')
 
     def handle_accept(self):
         conn, addr = self.accept()
         # print 'Connection attempt from', addr[0]
-        self.sessions.append(ChatSession(self, conn))
+        ChatSession(self, conn)
 
 if __name__ == '__main__':
     s = ChatServer(PORT, NAME)
