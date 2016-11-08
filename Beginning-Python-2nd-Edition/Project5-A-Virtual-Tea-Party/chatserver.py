@@ -74,11 +74,10 @@ class LoginRoom(Room):
     """
     为刚刚连接上的用户准备的房间。
     """
-
     def add(self, session):
         Room.add(self, session)
         # 当用户进入时，问候TA：
-        self.broadcast('Welcome to %\r\n' % self.server.name)
+        self.broadcast('Welcome to %s\r\n' % self.server.name)
 
     def unknown(self, session, cmd):
         # 所有未知命令（除了login或者logout外的一切）
@@ -204,7 +203,7 @@ class ChatServer(dispatcher):
         self.listen(5)
         self.name = name
         self.users = {}
-        self.sessions = []
+        self.main_room = ChatRoom(self)
 
     def handle_accept(self):
         conn, addr = self.accept()
