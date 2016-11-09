@@ -20,7 +20,8 @@ soup = BeautifulSoup(text, "lxml")
 jobs = set()
 for header in soup('h2'):
     links = header('a')
-    if not links: continue
+    if not links:
+        continue
     link = links[0]
     jobs.add('%s (%s)' % (link.string, link['href']))
 
