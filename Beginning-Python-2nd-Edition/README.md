@@ -9,13 +9,13 @@
 - [x] CHAPTER 7 More Abstraction
 - [ ] CHAPTER 8 Exceptions161
 - [ ] CHAPTER 9 Magic Methods, Properties, and Iterators
-- [ ] CHAPTER 10 Batteries Included 
+- [ ] CHAPTER 10 Batteries Included
 - [x] CHAPTER 11 Files and Stuff
 - [ ] CHAPTER 12 Graphical User Interfaces
 - [ ] CHAPTER 13 Database Support
 - [x] CHAPTER 14 Network Programming
 - [x] CHAPTER 15 Python and the Web
-- [ ] CHAPTER 16 Testing, 1-2-3 
+- [ ] CHAPTER 16 Testing, 1-2-3
 - [ ] CHAPTER 17 Extending Python
 - [ ] CHAPTER 18 Packaging Your Programs
 - [ ] CHAPTER 19 Playful Programming
@@ -57,3 +57,12 @@ server: news2.neva.ru
 - 能够解释命令，例如，say后者logout
 - 容易扩展
 
+## Project6-Remote-Editing-with-CGI
+主要功能：
+- 将文档作为普通网页显示
+- 在Web表单的文本域内显示文档
+- 保存表单中的文本
+- 使用密码保护文档
+- 容易扩展，以支持处理多于一个文档的情况
+
+**使用CGI的POST方法替代默认的GET，提交大量数据时一般使用POST**
