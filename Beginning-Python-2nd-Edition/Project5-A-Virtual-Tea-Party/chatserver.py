@@ -34,7 +34,7 @@ class CommandHandler:
         except IndexError:
             line = ''
         # 试着查找处理程序：
-        meth = getattr(self, 'do_'+cmd, None)
+        meth = getattr(self, 'do_' + cmd, None)
         try:
             # 假定它是可调用的：
             meth(session, line)
@@ -74,6 +74,7 @@ class LoginRoom(Room):
     """
     为刚刚连接上的用户准备的房间。
     """
+
     def add(self, session):
         Room.add(self, session)
         # 当用户进入时，问候TA：
@@ -117,7 +118,7 @@ class ChatRoom(Room):
         self.broadcast(session.name + ' has left the room.\r\n')
 
     def do_say(self, session, line):
-        self.broadcast(session.name+': '+line+'\r\n')
+        self.broadcast(session.name + ': ' + line + '\r\n')
 
     def do_look(self, session, line):
         # 处理look命令，该命令用于查看谁在房间内
@@ -149,6 +150,7 @@ class ChatSession(async_chat):
     """
     单会话，负责和用户通信。
     """
+
     def __init__(self, server, sock):
         # 标准设置任务：
         async_chat.__init__(self, sock)
@@ -194,6 +196,7 @@ class ChatServer(dispatcher):
     接受连接并且产生单个会话的类。它还会处理到其他会话的广播。
     只有一个房间的聊天服务器。
     """
+
     def __init__(self, port, name):
         # Standard setup tasks
         dispatcher.__init__(self)
