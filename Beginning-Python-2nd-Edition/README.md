@@ -30,10 +30,10 @@
 - [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
 - [ ] CHAPTER 29 Project 10: Do-It-Yourself Arcade Game
 
-APPENDIX A The Short Version569
-APPENDIX B Python Reference579
-APPENDIX C Online Resources595
-APPENDIX D Python 3.0.599
+- APPENDIX A The Short Version569
+- APPENDIX B Python Reference579
+- APPENDIX C Online Resources595
+- APPENDIX D Python 3.0.599
 
 ## Project1-Instant-Markup
 自己构建一个解析器来分析文章中的各种标记，并且输出为HTML形式。类似Markdown。
