@@ -24,7 +24,7 @@
 - [x] CHAPTER 22 Project 3: XML for All Occasions
 - [x] CHAPTER 23 Project 4: In the News
 - [x] CHAPTER 24 Project 5: A Virtual Tea Party
-- [ ] CHAPTER 25 Project 6: Remote Editing with CGI
+- [x] CHAPTER 25 Project 6: Remote Editing with CGI
 - [ ] CHAPTER 26 Project 7: Your Own Bulletin Board
 - [ ] CHAPTER 27 Project 8: File Sharing with XML-RPC
 - [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
