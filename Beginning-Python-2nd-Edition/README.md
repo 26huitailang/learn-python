@@ -12,7 +12,7 @@
 - [ ] CHAPTER 10 Batteries Included
 - [x] CHAPTER 11 Files and Stuff
 - [ ] CHAPTER 12 Graphical User Interfaces
-- [ ] CHAPTER 13 Database Support
+- [x] CHAPTER 13 Database Support
 - [x] CHAPTER 14 Network Programming
 - [x] CHAPTER 15 Python and the Web
 - [x] CHAPTER 16 Testing, 1-2-3
