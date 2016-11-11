@@ -15,7 +15,7 @@
 - [ ] CHAPTER 13 Database Support
 - [x] CHAPTER 14 Network Programming
 - [x] CHAPTER 15 Python and the Web
-- [ ] CHAPTER 16 Testing, 1-2-3
+- [x] CHAPTER 16 Testing, 1-2-3
 - [ ] CHAPTER 17 Extending Python
 - [ ] CHAPTER 18 Packaging Your Programs
 - [ ] CHAPTER 19 Playful Programming
@@ -34,6 +34,25 @@
 - APPENDIX B Python Reference579
 - APPENDIX C Online Resources595
 - APPENDIX D Python 3.0.599
+
+## CH13 Database Support
+全局变量
+
+异常，except块捕捉
+
+连接和游标
+- 关闭了连接但还有未提交会隐式回滚，应该在每次关闭连接前进行提交
+- cursor游标对象，通过cursor执行SQL查询并检查结果
+
+SQLite，小型，不需要对立服务器运行，不基于集中式数据库存储机制，直接作用于本地文件。
+
+13-1
+- sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 10, and there are 53 supplied.
+
+[:field_count] -> [: 10]
+
+13-2
+- query语句的表名写错为FOOD，fiber >= 10用的数据全被排除。
 
 ## Project1-Instant-Markup
 自己构建一个解析器来分析文章中的各种标记，并且输出为HTML形式。类似Markdown。
@@ -66,3 +85,9 @@ server: news2.neva.ru
 - 容易扩展，以支持处理多于一个文档的情况
 
 **使用CGI的POST方法替代默认的GET，提交大量数据时一般使用POST**
+
+**Tips**:代码从windows平台拷贝到linux环境中运行时，注意转换line endings，CRLF(WIN)->LF(类Unix)，否则无法运行。
+
+## Project7-Your Own Bulletin Board
+相关：CH13数据库内容
+PostgreSQL -> import psycopg
