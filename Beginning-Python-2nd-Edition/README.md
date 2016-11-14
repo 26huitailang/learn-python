@@ -90,4 +90,36 @@ server: news2.neva.ru
 
 ## Project7-Your Own Bulletin Board
 相关：CH13数据库内容
-PostgreSQL -> import psycopg
+PostgreSQL -> sudo apt-get install python-psycopg2
+引用：
+
+```python
+from psycopg2 import psycopg1 as psycopg
+```
+
+Linux 测试：
+```python
+from psycopg2 import psycopg1 as psycopg
+conn = psycopg.connect('user=bar dbname=bar password=123456')
+curs = conn.cursor()
+curs.execute('SELECT * FROM messages')
+curs.fetchall()
+```
+
+字段列表：
+- id: 用于标识唯一的消息
+- subject: 包括消息主题的字符串
+- sender: 包括发送者名字、Email地址的或其他信息的字符串
+- reply_to: 如果消息是回复其他信息的，那么这个字段就包括那个消息的id（否则，字段就是空的）
+- text: 包括消息内容的字符串
+
+PostgreSQL
+> psycopg2.ProgrammingError: permission denied for relation messages
+
+    GRANT on the database is not what you need. Grant on the tables directly.
+    Granting privileges on the database mostly is used to grant or revoke connect privileges. This allows you to specify who may do stuff in the database if they have sufficient other permissions.
+    You want instead:
+    ```SQL
+    GRANT ALL PRIVILEGES ON TABLE side_adzone TO jerry;
+    ```
+    This will take care of this issue.
