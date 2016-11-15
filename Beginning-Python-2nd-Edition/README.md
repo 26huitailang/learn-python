@@ -29,7 +29,7 @@
 - [ ] CHAPTER 27 Project 8: File Sharing with XML-RPC
 - [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
 - [ ] CHAPTER 29 Project 10: Do-It-Yourself Arcade Game
-
+-
 - APPENDIX A The Short Version569
 - APPENDIX B Python Reference579
 - APPENDIX C Online Resources595
@@ -37,30 +37,28 @@
 
 ---
 ## CH13 Database Support
-全局变量
 
-异常，except块捕捉
+- 全局变量
+- 异常，except块捕捉
+- 连接和游标
+> 关闭了连接但还有未提交会隐式回滚，应该在每次关闭连接前进行提交
+> cursor游标对象，通过cursor执行SQL查询并检查结果
 
-连接和游标
-- 关闭了连接但还有未提交会隐式回滚，应该在每次关闭连接前进行提交
-- cursor游标对象，通过cursor执行SQL查询并检查结果
+_SQLite_，小型，不需要对立服务器运行，不基于集中式数据库存储机制，直接作用于本地文件。
 
-SQLite，小型，不需要对立服务器运行，不基于集中式数据库存储机制，直接作用于本地文件。
+- 代码13-1，sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 10, and there are 53 supplied.
+> [:field_count] -> [: 10]
 
-13-1
-- sqlite3.ProgrammingError: Incorrect number of bindings supplied. The current statement uses 10, and there are 53 supplied.
-
-[:field_count] -> [: 10]
-
-13-2
-- query语句的表名写错为FOOD，fiber >= 10用的数据全被排除。
+- 代码13-2， query语句的表名写错为FOOD，fiber >= 10用的数据全被排除。
 
 ---
 ## Project1-Instant-Markup
+
 自己构建一个解析器来分析文章中的各种标记，并且输出为HTML形式。类似Markdown。
 
 ---
 ## Project2-Painting-a-Pretty-Picture
+
 利用urllib网上抓取txt的数据并过滤，使用reportlab包完成绘图并输出为pdf。
 
 看过pandas，觉得pandas实现更简单，特别是数据处理方面。
@@ -74,6 +72,7 @@ SQLite，小型，不需要对立服务器运行，不基于集中式数据库�
 [free usenet server](http://www.freeusenetnews.com/)
 server: news2.neva.ru
 
+---
 ## Project5-A-Virtual-Tea-Party
 主要功能：
 - 服务器能接受来自不同用户的多个连接
@@ -85,6 +84,7 @@ server: news2.neva.ru
 ## Project6-Remote-Editing-with-CGI
 
 **CGI:** 将网页表单内容提供给可编程语言进行处理。
+
 主要功能：
 - 将文档作为普通网页显示
 - 在Web表单的文本域内显示文档
@@ -94,12 +94,16 @@ server: news2.neva.ru
 
 **使用CGI的POST方法替代默认的GET，提交大量数据时一般使用POST**
 
-**Tips**:代码从windows平台拷贝到linux环境中运行时，注意转换line endings，CRLF(WIN)->LF(类Unix)，否则无法运行。
+### 问题
+
+- 代码从windows平台拷贝到linux环境中运行时，否则无法运行。
+> 注意转换line endings，CRLF(WIN)->LF(类Unix)。
 
 ---
 ## Project7-Your Own Bulletin Board
-相关：CH13数据库内容
+前置：CH13数据库内容
 PostgreSQL -> sudo apt-get install python-psycopg2
+
 引用：
 
 ```python
@@ -125,25 +129,23 @@ curs.fetchall()
 ### 问题：
 
 PostgreSQL
-> psycopg2.ProgrammingError: permission denied for relation messages
+- psycopg2.ProgrammingError: permission denied for relation messages
 
-    GRANT on the database is not what you need. Grant on the tables directly.
-    Granting privileges on the database mostly is used to grant or revoke connect privileges. This allows you to specify who may do stuff in the database if they have sufficient other permissions.
-    You want instead:
-    ```SQL
-    GRANT ALL PRIVILEGES ON TABLE table_name TO user;
-    ```
-    This will take care of this issue.
+> GRANT on the database is not what you need. Grant on the tables directly.
+>Granting privileges on the database mostly is used to grant or revoke connect privileges. This allows you to specify who may do stuff in the database if they have sufficient other permissions.
+```SQL
+GRANT ALL PRIVILEGES ON TABLE table_name TO user;
+```
 
-> 单引号'转义（逃逸）
+- 单引号'转义（逃逸）
 
-    使用两个单引号即可，教程中的“\\'"有误
+> 使用两个单引号即可，教程中的“\\'"有误
 
-> permission denied for sequence messages_id_seq
+- permission denied for sequence messages_id_seq
 
-    Since PostgreSQL 8.2 you have to use:
-    ```SQL
-    GRANT USAGE, SELECT ON SEQUENCE messages_id_seq TO bar;
-    ```
-    GRANT USAGE - For sequences, this privilege allows the use of the currval and nextval functions.
+> Since PostgreSQL 8.2 you have to use:
+```SQL
+GRANT USAGE, SELECT ON SEQUENCE messages_id_seq TO bar;
+```
+> GRANT USAGE - For sequences, this privilege allows the use of the currval and nextval functions.
 
