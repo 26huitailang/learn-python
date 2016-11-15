@@ -2,11 +2,10 @@
 
 print 'Content-type: text/html\n'
 
-import cgitb:
-    cgitb.enable()
+import cgitb; cgitb.enable()
 
 from psycopg2 import psycopg1 as psycopg
-conn = psycopg.connect('dbname=foo user=bar')
+conn = psycopg.connect('dbname=foo user=bar password=123456')
 curs = conn.cursor()
 
 print """
@@ -15,12 +14,11 @@ print """
         <title>The FooBar Bulletin Board</title>
     </head>
     <body>
-        <h1>The FooBar Bulletin Board</title>
+        <h1>The FooBar Bulletin Board</h1>
         """
 
 curs.execute('SELECT * FROM messages')
 rows = curs.dictfetchall()
-
 toplevel = []
 children = {}
 
