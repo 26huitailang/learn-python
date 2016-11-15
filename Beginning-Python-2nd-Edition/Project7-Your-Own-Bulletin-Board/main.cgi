@@ -31,7 +31,7 @@ for row in rows:
 
 
 def format(row):
-    print row['subject']
+    print '<p><a href="view.cgi?id=%(id)i">%(subject)s</a></p>' % row
     try:
         kids = children[row['id']]
     except KeyError:
@@ -49,6 +49,8 @@ for row in toplevel:
 
 print """
         </p>
+        <hr />
+        <p><a href="edit.cgi">Post message</a></p>
     </body>
 </html>
 """

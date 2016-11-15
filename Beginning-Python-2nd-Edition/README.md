@@ -25,7 +25,7 @@
 - [x] CHAPTER 23 Project 4: In the News
 - [x] CHAPTER 24 Project 5: A Virtual Tea Party
 - [x] CHAPTER 25 Project 6: Remote Editing with CGI
-- [ ] CHAPTER 26 Project 7: Your Own Bulletin Board
+- [x] CHAPTER 26 Project 7: Your Own Bulletin Board
 - [ ] CHAPTER 27 Project 8: File Sharing with XML-RPC
 - [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
 - [ ] CHAPTER 29 Project 10: Do-It-Yourself Arcade Game
@@ -35,6 +35,7 @@
 - APPENDIX C Online Resources595
 - APPENDIX D Python 3.0.599
 
+---
 ## CH13 Database Support
 全局变量
 
@@ -54,17 +55,21 @@ SQLite，小型，不需要对立服务器运行，不基于集中式数据库�
 13-2
 - query语句的表名写错为FOOD，fiber >= 10用的数据全被排除。
 
+---
 ## Project1-Instant-Markup
 自己构建一个解析器来分析文章中的各种标记，并且输出为HTML形式。类似Markdown。
 
+---
 ## Project2-Painting-a-Pretty-Picture
 利用urllib网上抓取txt的数据并过滤，使用reportlab包完成绘图并输出为pdf。
 
 看过pandas，觉得pandas实现更简单，特别是数据处理方面。
 
+---
 ## Project3-XML-for-All-Ocassions
 用XML构建一个网站，自己解析并生成html文件。
 
+---
 ## Project4-In-the-News
 [free usenet server](http://www.freeusenetnews.com/)
 server: news2.neva.ru
@@ -76,7 +81,10 @@ server: news2.neva.ru
 - 能够解释命令，例如，say后者logout
 - 容易扩展
 
+---
 ## Project6-Remote-Editing-with-CGI
+
+**CGI:** 将网页表单内容提供给可编程语言进行处理。
 主要功能：
 - 将文档作为普通网页显示
 - 在Web表单的文本域内显示文档
@@ -88,6 +96,7 @@ server: news2.neva.ru
 
 **Tips**:代码从windows平台拷贝到linux环境中运行时，注意转换line endings，CRLF(WIN)->LF(类Unix)，否则无法运行。
 
+---
 ## Project7-Your Own Bulletin Board
 相关：CH13数据库内容
 PostgreSQL -> sudo apt-get install python-psycopg2
@@ -113,6 +122,8 @@ curs.fetchall()
 - reply_to: 如果消息是回复其他信息的，那么这个字段就包括那个消息的id（否则，字段就是空的）
 - text: 包括消息内容的字符串
 
+### 问题：
+
 PostgreSQL
 > psycopg2.ProgrammingError: permission denied for relation messages
 
@@ -120,6 +131,19 @@ PostgreSQL
     Granting privileges on the database mostly is used to grant or revoke connect privileges. This allows you to specify who may do stuff in the database if they have sufficient other permissions.
     You want instead:
     ```SQL
-    GRANT ALL PRIVILEGES ON TABLE side_adzone TO jerry;
+    GRANT ALL PRIVILEGES ON TABLE table_name TO user;
     ```
     This will take care of this issue.
+
+> 单引号'转义（逃逸）
+
+    使用两个单引号即可，教程中的“\\'"有误
+
+> permission denied for sequence messages_id_seq
+
+    Since PostgreSQL 8.2 you have to use:
+    ```SQL
+    GRANT USAGE, SELECT ON SEQUENCE messages_id_seq TO bar;
+    ```
+    GRANT USAGE - For sequences, this privilege allows the use of the currval and nextval functions.
+
