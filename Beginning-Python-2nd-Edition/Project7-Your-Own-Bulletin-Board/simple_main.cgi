@@ -27,17 +27,20 @@ for row in rows:
     if parent_id is None:
         toplevel.append(row)
     else:
+        # dict{parent_id: row}
         children.setdefault(parent_id, []).append(row)
 
 
 def format(row):
     print row['subject']
     try:
+        # kids[row, row, ...]
         kids = children[row['id']]
     except KeyError:
         pass
     else:
         print '<blockquote>'
+        # kid is a row with parent_id
         for kid in kids:
             format(kid)
         print '</blockquote>'

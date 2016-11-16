@@ -149,3 +149,12 @@ GRANT USAGE, SELECT ON SEQUENCE messages_id_seq TO bar;
 ```
 > GRANT USAGE - For sequences, this privilege allows the use of the currval and nextval functions.
 
+---
+## Project8-File Sharing with XML-RPC
+
+前置章节：
+- 14 socket
+- 15 网络
+- 24 socket
+
+**P2P**：任何节点peer都可以连接到其他节点，在这样一个由节点组成的网络中，是没有中央节点的（C/S架构中的服务器所表现的），这样网络会更**强壮**。除非大多数节点关闭了，否则网络是不会崩溃的。

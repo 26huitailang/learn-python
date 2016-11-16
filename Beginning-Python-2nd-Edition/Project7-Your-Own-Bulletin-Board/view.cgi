@@ -10,7 +10,7 @@ curs = conn.cursor()
 
 import cgi, sys
 form = cgi.FieldStorage()
-id = form.getvalue('id')
+id = form.getvalue('id')  # 'id' from main.cgi
 
 print """
 <html>
