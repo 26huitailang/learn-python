@@ -29,7 +29,6 @@
 - [ ] CHAPTER 27 Project 8: File Sharing with XML-RPC
 - [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
 - [ ] CHAPTER 29 Project 10: Do-It-Yourself Arcade Game
--
 - APPENDIX A The Short Version569
 - APPENDIX B Python Reference579
 - APPENDIX C Online Resources595
@@ -148,6 +147,40 @@ GRANT ALL PRIVILEGES ON TABLE table_name TO user;
 GRANT USAGE, SELECT ON SEQUENCE messages_id_seq TO bar;
 ```
 > GRANT USAGE - For sequences, this privilege allows the use of the currval and nextval functions.
+
+- FATAL: Peer authentication failed for user “bar”
+
+> 1.运行下面的命令编辑pg_hba.conf文件
+```Linux
+sudo gedit /etc/postgresql/9.1/main/pg_hba.conf
+```
+> 2.将
+
+> \# Database administrative login by Unix domain socket
+
+> local   all    postgres     peer
+
+> 改为
+
+> \# Database administrative login by Unix domain socket
+
+> local   all       postgres    trust或md5
+
+> 3.保存后执行下面的命令重新加载配置文件:
+```Linux
+sudo /etc/init.d/postgresql reload
+```
+
+- PostgreSQL -> sudo apt-get install python-psycopg2，在笔记本上报错python2.7-minimal
+
+> 在提示出错后，修改 /usr/share/python/runtime.d/public_modules.rtinstall，注释掉所有的内容，（注释sh方法 : 'BLOCK  代码块  BLOCK'，BLOCK可省），然后
+```Linux
+apt-get -f install 
+```
+> 待正常后，再执行一次
+```Linux
+pycompile -V 2.7 /usr/lib/python2.7/dist-packages
+```
 
 ---
 ## Project8-File Sharing with XML-RPC
