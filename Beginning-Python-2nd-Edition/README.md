@@ -35,6 +35,37 @@
 - APPENDIX D Python 3.0.599
 
 ---
+## CH10 Batteries Included
+
+import-only-once，在两个模块互相导入时避免发生无限循环，如果坚持要重新载入模块，可以使用內建的*reload*函数
+
+代码重用，模块化，抽象
+
+主程序中，__name__的值是'__main__'，而在导入的模块中，这个值被设定为模块的名字，这个设定加上if语句，可以让测试代码更好用：
+```python
+# hello4
+def hello():
+    print "hello, world!"
+
+def test():
+    hello()
+
+if __name__ == '__main__': test()
+```
+作为程序运行，hello函数会被执行。而作为模块导入，不执行，就像普通模块一样：
+```pythonenv
+>>> import hello4
+>>> hello4.hello()
+hello, world!
+```
+
+*包*：模块组织好分组为包*package。包也是另一种模块，包含了许多其他模块，为了使python将一个目录作为包对待，加入__init__.py的文件（模块）。
+
+**grok**: 神入，黑客语言，意思是完全理解、通过感觉意会，源自Robert A.Heinlein的小说*Stranger in a Strange Land*（《陌生徒弟上的陌生人》Ace Books，1995年重新发行）
+
+### 如何探索新的模块
+1. 谁用dir：查看模块包含的内容，将对象（以及模块的所有函数、类、变量等）所有特性列出。
+---
 ## CH13 Database Support
 
 - 全局变量
@@ -186,6 +217,7 @@ pycompile -V 2.7 /usr/lib/python2.7/dist-packages
 ## Project8-File Sharing with XML-RPC
 
 前置章节：
+- 10 batteries included
 - 14 socket
 - 15 网络
 - 24 socket
