@@ -64,7 +64,12 @@ hello, world!
 **grok**: 神入，黑客语言，意思是完全理解、通过感觉意会，源自Robert A.Heinlein的小说*Stranger in a Strange Land*（《陌生徒弟上的陌生人》Ace Books，1995年重新发行）
 
 ### 如何探索新的模块
-1. 谁用dir：查看模块包含的内容，将对象（以及模块的所有函数、类、变量等）所有特性列出。
+1. 谁用dir：查看模块包含的内容，将对象（以及模块的所有函数、类、变量等）所有特性列出。打印过滤掉模块内部的特性：
+```python
+[n for n in dir(copy) if not n.startswith('_')]
+```
+2. __all__变量，是在模块内部定义的，__all__ = ["Error", "copy", "deepcopy"]，定义了模块的公有接口，如果使用from copy import *，导入的就是__all__中的几个函数，要导入其他PyStringMap的话就要显式实现或显式调用。
+
 ---
 ## CH13 Database Support
 
