@@ -70,6 +70,38 @@ hello, world!
 ```
 2. __all__变量，是在模块内部定义的，__all__ = ["Error", "copy", "deepcopy"]，定义了模块的公有接口，如果使用from copy import *，导入的就是__all__中的几个函数，要导入其他PyStringMap的话就要显式实现或显式调用。
 
+3. help函数，help(copy.copy),print copy.copy.__doc__
+
+### 标准库
+- sys，让你访问与python解释器联系紧密的变量和函数
+- os
+    - os.sep用于路径名中的分隔符，UNIX中标准是“/”，windows中是“\\”。
+    - os.system，windows下调用，os.system(r'd:\"Program Files"\xxx.exe')，空格的文件名需要单独引用
+    - os.startfile，windows特有的函数，可以解决windows的路径问题，os.startfile(r'd:\Program Files\xxx.exe')
+- fileinput，轻松遍历文本文件的所有行。
+    ```python
+    python some_script.py file1.txt file2.txt file3.txt
+    ```
+    > 标准输入（sys.stdin）的文本进行遍历，使在UNIX的管道中，使用标准的命令cat：
+    ```unix
+    cat file.txt | python some_script.py
+    ```
+    > 假设python每行只有40个字符，使用fileinput来遍历并添加行号
+    ```python
+    # numberlines.py
+
+    import fileinput
+
+    for line in fileinput.input(inplace=True):
+        line = line.rstrip()
+        num = fileinput.lineno()
+        print '%-40s %2i' % (line, num)
+    ```
+    > 运行于程序本身
+    ```run
+    python numberlines.py numberlines.py
+    ```
+
 ---
 ## CH13 Database Support
 
