@@ -102,6 +102,12 @@ hello, world!
     python numberlines.py numberlines.py
     ```
 
+- 集合 set
+- 堆 heap
+- 双端队列 double-ended或deque
+
+- time
+- random 实际为伪随机。为了接近真正的随机性可以使用urandom函数，或者random模块内的SystemRandom类
 ---
 ## CH13 Database Support
 
