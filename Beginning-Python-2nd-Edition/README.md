@@ -266,3 +266,8 @@ pycompile -V 2.7 /usr/lib/python2.7/dist-packages
 - 24 socket
 
 **P2P**：任何节点peer都可以连接到其他节点，在这样一个由节点组成的网络中，是没有中央节点的（C/S架构中的服务器所表现的），这样网络会更**强壮**。除非大多数节点关闭了，否则网络是不会崩溃的。
+
+finished.
+
+### tips
+- startswith错写为startwith
