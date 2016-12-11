@@ -35,7 +35,7 @@
 - APPENDIX D Python 3.0.599
 
 ---
-## CH10 Batteries Included
+# CH10 Batteries Included
 
 import-only-once，在两个模块互相导入时避免发生无限循环，如果坚持要重新载入模块，可以使用內建的*reload*函数
 
@@ -63,7 +63,7 @@ hello, world!
 
 **grok**: 神入，黑客语言，意思是完全理解、通过感觉意会，源自Robert A.Heinlein的小说*Stranger in a Strange Land*（《陌生徒弟上的陌生人》Ace Books，1995年重新发行）
 
-### 如何探索新的模块
+## 如何探索新的模块
 1. 谁用dir：查看模块包含的内容，将对象（以及模块的所有函数、类、变量等）所有特性列出。打印过滤掉模块内部的特性：
 ```python
 [n for n in dir(copy) if not n.startswith('_')]
@@ -72,7 +72,7 @@ hello, world!
 
 3. help函数，help(copy.copy),print copy.copy.__doc__
 
-### 标准库
+## 标准库
 - sys，让你访问与python解释器联系紧密的变量和函数
 - os
     - os.sep用于路径名中的分隔符，UNIX中标准是“/”，windows中是“\\”。
@@ -108,8 +108,9 @@ hello, world!
 
 - time
 - random 实际为伪随机。为了接近真正的随机性可以使用urandom函数，或者random模块内的SystemRandom类
+
 ---
-## CH13 Database Support
+# CH13 Database Support
 
 - 全局变量
 - 异常，except块捕捉
@@ -125,28 +126,28 @@ _SQLite_，小型，不需要对立服务器运行，不基于集中式数据库
 - 代码13-2， query语句的表名写错为FOOD，fiber >= 10用的数据全被排除。
 
 ---
-## Project1-Instant-Markup
+# Project1-Instant-Markup
 
 自己构建一个解析器来分析文章中的各种标记，并且输出为HTML形式。类似Markdown。
 
 ---
-## Project2-Painting-a-Pretty-Picture
+# Project2-Painting-a-Pretty-Picture
 
 利用urllib网上抓取txt的数据并过滤，使用reportlab包完成绘图并输出为pdf。
 
 看过pandas，觉得pandas实现更简单，特别是数据处理方面。
 
 ---
-## Project3-XML-for-All-Ocassions
+# Project3-XML-for-All-Ocassions
 用XML构建一个网站，自己解析并生成html文件。
 
 ---
-## Project4-In-the-News
+# Project4-In-the-News
 [free usenet server](http://www.freeusenetnews.com/)
 server: news2.neva.ru
 
 ---
-## Project5-A-Virtual-Tea-Party
+# Project5-A-Virtual-Tea-Party
 主要功能：
 - 服务器能接受来自不同用户的多个连接
 - 允许用户同时（并行）操作
@@ -154,7 +155,7 @@ server: news2.neva.ru
 - 容易扩展
 
 ---
-## Project6-Remote-Editing-with-CGI
+# Project6-Remote-Editing-with-CGI
 
 **CGI:** 将网页表单内容提供给可编程语言进行处理。
 
@@ -167,13 +168,13 @@ server: news2.neva.ru
 
 **使用CGI的POST方法替代默认的GET，提交大量数据时一般使用POST**
 
-### 问题
+## 问题
 
 - 代码从windows平台拷贝到linux环境中运行时，否则无法运行。
 > 注意转换line endings，CRLF(WIN)->LF(类Unix)。
 
 ---
-## Project7-Your Own Bulletin Board
+# Project7-Your Own Bulletin Board
 前置：CH13数据库内容
 PostgreSQL -> sudo apt-get install python-psycopg2
 
@@ -199,7 +200,7 @@ curs.fetchall()
 - reply_to: 如果消息是回复其他信息的，那么这个字段就包括那个消息的id（否则，字段就是空的）
 - text: 包括消息内容的字符串
 
-### 问题：
+## 问题：
 
 PostgreSQL
 - psycopg2.ProgrammingError: permission denied for relation messages
@@ -257,7 +258,7 @@ pycompile -V 2.7 /usr/lib/python2.7/dist-packages
 ```
 
 ---
-## Project8-File Sharing with XML-RPC
+# Project8-File Sharing with XML-RPC
 
 前置章节：
 - 10 batteries included
@@ -267,7 +268,9 @@ pycompile -V 2.7 /usr/lib/python2.7/dist-packages
 
 **P2P**：任何节点peer都可以连接到其他节点，在这样一个由节点组成的网络中，是没有中央节点的（C/S架构中的服务器所表现的），这样网络会更**强壮**。除非大多数节点关闭了，否则网络是不会崩溃的。
 
-finished.
+**finished.**
 
 ### tips
 - startswith错写为startwith
+=======
+验证文件名：使用os.path模块，可以实现不依赖平台（Windows、UNIX和Mac OS都行）的方案，方法是创建由目录名和文件名组成的绝对路径，目录名和空文件名连接起来（使用os.path.join）保证结尾是文件分隔符（比如'/'），然后就可以检查绝对文件名是否以绝对目录名开始。如果是的话，那么文件就存在目录中。
