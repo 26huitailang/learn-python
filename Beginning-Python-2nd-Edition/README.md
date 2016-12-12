@@ -26,7 +26,7 @@
 - [x] CHAPTER 24 Project 5: A Virtual Tea Party
 - [x] CHAPTER 25 Project 6: Remote Editing with CGI
 - [x] CHAPTER 26 Project 7: Your Own Bulletin Board
-- [ ] CHAPTER 27 Project 8: File Sharing with XML-RPC
+- [x] CHAPTER 27 Project 8: File Sharing with XML-RPC
 - [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
 - [ ] CHAPTER 29 Project 10: Do-It-Yourself Arcade Game
 - APPENDIX A The Short Version569
@@ -108,6 +108,22 @@ hello, world!
 
 - time
 - random 实际为伪随机。为了接近真正的随机性可以使用urandom函数，或者random模块内的SystemRandom类
+
+
+---
+CH12 Graphical User Interfaces(GUI)
+
+一些流行的GUI工具包：
+
+- Tkinter   使用Tk平台。很容易得到。半标准。[website](http://wiki.python.org/moin/TkInter)
+- wxpython  基于wxWindows。跨平台越来愈流行。[website](http://wxpython.org)
+- PythonWin 只能在windows上使用。使用了本机的windows GUI功能[website](http://starship.python.net/crew/mhammond)
+- Java Swing    只能用于Jython。使用本机的Java GUI
+- PyGTK 使用GTK平台在Linux上很流行。
+- PyQT  使用Qt平台，跨平台。
+
+
+
 
 ---
 # CH13 Database Support
