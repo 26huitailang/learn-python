@@ -13,3 +13,13 @@ GUI客户端的需求：
 有用的工具：
 
 - wxPython工具包。参见第12章。书中代码使用wxPython2.6开发。
+
+**ERROR**
+
+- xmlrpclib.Fault: <Fault 1: "<class 'socket.error'>:[Errno 10061] ">
+> line拼写错误
+    ```python
+    for line in open(urlfile):
+        line = line.strip()
+        self.server.hello(line)
+    ```
