@@ -23,3 +23,4 @@ GUI客户端的需求：
         line = line.strip()
         self.server.hello(line)
     ```
+    未解决
