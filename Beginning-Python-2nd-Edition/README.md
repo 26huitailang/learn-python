@@ -11,7 +11,7 @@
 - [ ] CHAPTER 9 Magic Methods, Properties, and Iterators
 - [ ] CHAPTER 10 Batteries Included
 - [x] CHAPTER 11 Files and Stuff
-- [ ] CHAPTER 12 Graphical User Interfaces
+- [x] CHAPTER 12 Graphical User Interfaces
 - [x] CHAPTER 13 Database Support
 - [x] CHAPTER 14 Network Programming
 - [x] CHAPTER 15 Python and the Web
@@ -27,7 +27,7 @@
 - [x] CHAPTER 25 Project 6: Remote Editing with CGI
 - [x] CHAPTER 26 Project 7: Your Own Bulletin Board
 - [x] CHAPTER 27 Project 8: File Sharing with XML-RPC
-- [ ] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
+- [x] CHAPTER 28 Project 9: File Sharing II—Now with GUI!
 - [ ] CHAPTER 29 Project 10: Do-It-Yourself Arcade Game
 - APPENDIX A The Short Version569
 - APPENDIX B Python Reference579
@@ -292,7 +292,7 @@ pycompile -V 2.7 /usr/lib/python2.7/dist-packages
 验证文件名：使用os.path模块，可以实现不依赖平台（Windows、UNIX和Mac OS都行）的方案，方法是创建由目录名和文件名组成的绝对路径，目录名和空文件名连接起来（使用os.path.join）保证结尾是文件分隔符（比如'/'），然后就可以检查绝对文件名是否以绝对目录名开始。如果是的话，那么文件就存在目录中。
 
 ---
-# CHAPTER 28 Project 9: File Sharing II—Now with GUI!
+# Project 9: File Sharing II—Now with GUI!
 
 Error:
 errno 10061 socket.error

@@ -1,3 +1,8 @@
+# Project 9: File Sharing II—Now with GUI!
+
+Error:
+errno 10061 socket.error
+
 本项目是对27章开发的文件共享系统进行扩展，添加一个GUI客户端。
 
 **目的：**

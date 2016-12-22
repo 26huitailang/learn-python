@@ -45,7 +45,7 @@ class Client(wx.App):
         """
         win = wx.Frame(None, title="File Sharing Client", size=(400, 45))
         bkg = wx.Panel(win)
-        self.input = input = wx.TextCtrl(bkg);
+        self.input = input = wx.TextCtrl(bkg)
 
         submit = wx.Button(bkg, label="Fetch", size=(80, 25))
         submit.Bind(wx.EVT_BUTTON, self.fetchHandler)
