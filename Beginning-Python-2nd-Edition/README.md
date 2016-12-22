@@ -16,7 +16,7 @@
 - [x] CHAPTER 14 Network Programming
 - [x] CHAPTER 15 Python and the Web
 - [x] CHAPTER 16 Testing, 1-2-3
-- [ ] CHAPTER 17 Extending Python
+- [x] CHAPTER 17 Extending Python
 - [ ] CHAPTER 18 Packaging Your Programs
 - [ ] CHAPTER 19 Playful Programming
 - [x] CHAPTER 20 Project 1: Instant Markup
