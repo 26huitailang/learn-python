@@ -1,0 +1,2 @@
+emoji
+not support chinese
