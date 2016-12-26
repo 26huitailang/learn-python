@@ -8,3 +8,27 @@ CH12 Graphical User Interfaces(GUI)
 - Java Swing    只能用于Jython。使用本机的Java GUI
 - PyGTK 使用GTK平台在Linux上很流行。
 - PyQT  使用Qt平台，跨平台。
+
+py2exe
+打包成windows下的可执行程序。
+setup.py
+```python
+import distutuils
+import py2exe
+distutils.core.setup(windows=['wxTest.py'])
+```
+
+都编辑好后，将wxTest.py和setup.py放到一个目录下。
+```python
+setup.py py2exe
+```
+
+如果在运行时报以下错误：
+error: MSVCP90.dll: No such file or directory
+是因为没有找到MSVCP90.dll，在windows目录下搜索MSVCP90.dll这个文件，然后拷到python安装目录的DLLs下就可以了。
+当打包PyQt项目时，可能会报以下错误
+ImportError: No module named sip
+这时只需要在打包时加上--includes sip就行啦，如：
+```python
+setup.py py2exe --includes sip
+```
