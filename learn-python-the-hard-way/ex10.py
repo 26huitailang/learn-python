@@ -22,7 +22,7 @@ goodday = "I said: \"What a good day!\""
 print "I said: \"What a good day!\""
 print "%r" % goodday
 
-
-# while True:
-    # for i in ["/","-","|","\\","|"]:
-        # print "%s\r" % i, #comma after print makes the print continuous, \r go back to the first col of the same line
+# comma after print makes the print continuous, \r go back to the first col of the same line
+while True:
+    for i in ["/","-","|","\\","|"]:
+        print "%s\r" % i, #comma after print makes the print continuous, \r go back to the first col of the same line

@@ -1,11 +1,13 @@
 from sys import exit
 from random import randint
 
+
 class Scene(object):
 
     def enter(self):
         print "This scene is not yet configured. Subclass it and implement enter()."
         exit(1)
+
 
 class Engine(object):
 
@@ -22,20 +24,22 @@ class Engine(object):
 
         # be sure to print out the last scene
         current_scene.enter()
-        
+
+
 class Death(Scene):
 
     quips = [
         "You died.  You kinda suck at this.",
-         "Your mom would be proud...if she were smarter.",
-         "Such a luser.",
-         "I have a small puppy that's better at this."
+        "Your mom would be proud...if she were smarter.",
+        "Such a luser.",
+        "I have a small puppy that's better at this."
     ]
 
     def enter(self):
-        print Death.quips[randint(0, len(self.quips)-1)]
+        print Death.quips[randint(0, len(self.quips) - 1)]
         exit(1)
-        
+
+
 class CentralCorridor(Scene):
 
     def enter(self):
@@ -82,7 +86,8 @@ class CentralCorridor(Scene):
         else:
             print "DOES NOT COMPUTE!"
             return 'central_corridor'
-            
+
+
 class LaserWeaponArmory(Scene):
 
     def enter(self):
@@ -93,7 +98,7 @@ class LaserWeaponArmory(Scene):
         print "and you need the code to get the bomb out.  If you get the code"
         print "wrong 10 times then the lock closes forever and you can't"
         print "get the bomb.  The code is 3 digits."
-        code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
+        code = "%d%d%d" % (randint(1, 9), randint(1, 9), randint(1, 9))
         guess = raw_input("[keypad]> ")
         guesses = 0
 
@@ -113,7 +118,6 @@ class LaserWeaponArmory(Scene):
             print "You decide to sit there, and finally the Gothons blow up the"
             print "ship from their ship and you die."
             return 'death'
-
 
 
 class TheBridge(Scene):
@@ -163,9 +167,8 @@ class EscapePod(Scene):
         print "but you don't have time to look.  There's 5 pods, which one"
         print "do you take?"
 
-        good_pod = randint(1,5)
+        good_pod = randint(1, 5)
         guess = raw_input("[pod #]> ")
-
 
         if int(guess) != good_pod:
             print "You jump into pod %s and hit the eject button." % guess
@@ -183,12 +186,14 @@ class EscapePod(Scene):
 
             return 'finished'
 
+
 class Finished(Scene):
 
     def enter(self):
         print "You won! Good job."
         return 'finished'
-        
+
+
 class Map(object):
 
     scenes = {
@@ -209,7 +214,7 @@ class Map(object):
 
     def opening_scene(self):
         return self.next_scene(self.start_scene)
-        
+
 a_map = Map('central_corridor')
 a_game = Engine(a_map)
 a_game.play()
