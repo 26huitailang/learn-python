@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="4cb320cd-b2a6-4a71-a2dd-9c994bcc701c" name="Default" comment="chatserver.py func enter error">
+=======
+    <list default="true" id="4cb320cd-b2a6-4a71-a2dd-9c994bcc701c" name="Default" comment="">
+>>>>>>> Stashed changes
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learn-python.iws" />
@@ -47,6 +51,7 @@
     <favorites_list name="learn-python" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="DelLines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/DelLines.py">
@@ -156,6 +161,9 @@
         </entry>
       </file>
     </leaf>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+>>>>>>> Stashed changes
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -282,6 +290,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -311,6 +320,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< Updated upstream
               <option name="myItemId" value="liaoxuefeng" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -330,6 +340,9 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="awesome-python-webapp" />
+=======
+              <option name="myItemId" value="learn-python-the-hard-way" />
+>>>>>>> Stashed changes
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -357,7 +370,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -927,6 +939,7 @@
       <option name="project" value="LOCAL" />
       <updated>1477303325864</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00018" summary="CH14">
       <created>1477989810814</created>
       <option name="number" value="00018" />
@@ -956,6 +969,16 @@
       <updated>1478578013024</updated>
     </task>
     <option name="localTasksCounter" value="22" />
+=======
+    <task id="LOCAL-00018" summary="CH15">
+      <created>1477551319284</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1477551319284</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TodoView">
@@ -971,9 +994,15 @@
     <frame x="864" y="43" width="1400" height="997" extended-state="0" />
     <editor active="false" />
     <layout>
+<<<<<<< Updated upstream
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28134328" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276644" sideWeight="0.49596775" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38321996" sideWeight="0.58444446" order="7" side_tool="true" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2777778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32771537" sideWeight="0.49596775" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3121453" sideWeight="0.5777778" order="7" side_tool="true" content_ui="tabs" />
+>>>>>>> Stashed changes
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30882353" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31861576" sideWeight="0.4798387" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31980908" sideWeight="0.44555557" order="9" side_tool="false" content_ui="tabs" />
@@ -1301,6 +1330,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/public_html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1309,6 +1339,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/public_html/interests/eating.html">
+=======
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/handlers.py" />
+    <entry file="file://$PROJECT_DIR$/practice/closure.py">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
@@ -1322,6 +1356,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/pagemaker.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1479,6 +1514,34 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch11-Files-and-Stuff/test-byline.txt">
+=======
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/Ms-PL.txt.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/Ms-PL.txt" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/simple_markup.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/rules.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/util.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/test_output2.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/test_input.txt" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/test_output.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/markup.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project2-Painting-a-Pretty-Picture/hello_report.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project2-Painting-a-Pretty-Picture/tuples-predicted-data.txt" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project2-Painting-a-Pretty-Picture/tuples-predicted-data.txt" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project1-Instant-Markup/README.md" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project2-Painting-a-Pretty-Picture/sunspots_proto.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project2-Painting-a-Pretty-Picture/README.md" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project2-Painting-a-Pretty-Picture/predicted-sunspot-radio-flux.txt" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/index.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/eating.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/sleeping.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/public_html/index.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/public_html/interests/eating.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/parse.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/pagemaker.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/website.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project3-XML-for-All-Occasions/website.xml" />
+    <entry file="file://D:/Anaconda2/Lib/email/__init__.py">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
@@ -1486,6 +1549,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch14-Web-Programming/14-1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1503,12 +1567,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/client.py">
+=======
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project4-In-the-News/aaa.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/README.md" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project4-In-the-News/newsagent1.py" />
+    <entry file="file://D:/Anaconda2/Lib/nntplib.py">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project5-A-Virtual-Tea-Party/simple_chat.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -1518,12 +1589,17 @@
       </provider>
     </entry>
     <entry file="file://D:/Anaconda2/Lib/site-packages/py/_code/source.py">
+=======
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project4-In-the-News/newsagent2.py" />
+    <entry file="file://D:/Anaconda2/Lib/email/message.py">
+>>>>>>> Stashed changes
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="71" column="50" selection-start-line="71" selection-start-column="42" selection-end-line="71" selection-end-column="50" />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1587,6 +1663,11 @@
         </state>
       </provider>
     </entry>
+=======
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Project4-In-the-News/news.html" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch15-Python-and-the-Web/15-1.py" />
+    <entry file="file://$PROJECT_DIR$/Beginning-Python-2nd-Edition/Ch15-Python-and-the-Web/15-3.py" />
+>>>>>>> Stashed changes
   </component>
   <component name="masterDetails">
     <states>
