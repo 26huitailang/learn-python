@@ -23,10 +23,13 @@ class Mzitu():
         client = MongoClient()
         # 选择一个数据库
         db = client['meinvxiezhenji']
-        # 在meinvxiezheng这个数据库总，选择meizitu这个集合
+        # 在meinvxiezheng这个数据库中，选择meizitu这个集合
         self.meizitu_collection = db['meizitu']
+        # 保存页面主题
         self.title = ''
+        # 保存页面地址
         self.url = ''
+        # 保存图片地址的列表
         self.img_urls = []
 
     def all_url(self, url):
@@ -42,6 +45,8 @@ class Mzitu():
         for a in all_a:
             # 获取<a>内容作为标题
             title = a.get_text()
+            # 保存到self.title中
+            self.title = title
             # 加点提示
             print(u'开始保存：', title)
             # 有个标题带有 ？ 这个符号Windows系统是不能创建文件夹的所以要替换掉
@@ -53,9 +58,12 @@ class Mzitu():
             os.chdir(mzitu_path)
             # 获取<a>中的href链接，套图地址
             href = a['href']
+            # 将套图地址保存到self.url中
             self.url = href
+            # 在meizitu集合中查找这个主题，判断是否存在，否则运行else
             if self.meizitu_collection.find_one({'主题页面': href}):
-                print(u'这个套图页面已经爬取过了' + '+'*20)
+                print(u'这个套图页面已经爬取过了' + '+' * 20)
+            # 主题页面不存在meizitu集合中
             else:
                 # 调用html函数把href参数传递过去，获取每页图片的地址
                 self.html(href)
@@ -73,6 +81,7 @@ class Mzitu():
         page_num = 0
         # 构建每页图片地址并调用img函数获得图片URL
         for page in range(1, int(max_span) + 1):
+            # 每访问一页加1
             page_num += 1
             # 构建图片页面地址
             page_url = href + '/' + str(page)
@@ -88,7 +97,9 @@ class Mzitu():
         # 解析并获得图片URL
         img_url = BeautifulSoup(img_html.text, 'lxml').find(
             'div', class_='main-image').find('img')['src']
+        # 套图所有的图片地址添加到self.img_urls
         self.img_urls.append(img_url)
+        # 判断page_num是否是最后一页，如果是就将数据插入到数据库中
         if int(max_span) == page_num:
             post = {
                 '标题': self.title,
@@ -99,6 +110,7 @@ class Mzitu():
             self.meizitu_collection.save(post)
             print(u'插入数据库成功')
             print('=======>>>>>>>DB')
+        # 不是最后一页，继续保存图片
         else:
             # 调用save函数保存图片
             self.save(img_url)
