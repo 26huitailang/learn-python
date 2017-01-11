@@ -5,10 +5,11 @@ from bs4 import BeautifulSoup
 import os
 from pymongo import MongoClient
 from datetime import datetime
+import re
 from download import request
 
 
-class Mzitu():
+class Mzitu:
     """
     抓取妹子图的类
     all_url，获得mzitu.com/all上面需要的内容
@@ -95,25 +96,36 @@ class Mzitu():
         # 请求，获取图片页面的Response
         img_html = request.get(page_url, 3)
         # 解析并获得图片URL
-        img_url = BeautifulSoup(img_html.text, 'lxml').find(
-            'div', class_='main-image').find('img')['src']
-        # 套图所有的图片地址添加到self.img_urls
-        self.img_urls.append(img_url)
-        # 判断page_num是否是最后一页，如果是就将数据插入到数据库中
-        if int(max_span) == page_num:
-            post = {
-                '标题': self.title,
-                '主题页面': self.url,
-                '图片地址': self.img_urls,
-                '获取时间': datetime.now()
-            }
-            self.meizitu_collection.save(post)
-            print(u'插入数据库成功')
-            print('=======>>>>>>>DB')
-        # 不是最后一页，继续保存图片
+        img_dict = BeautifulSoup(img_html.text, 'lxml').find(
+            'div', class_='main-image').find('img')
+        if img_dict is not None:
+            img_url = img_dict['src']
         else:
-            # 调用save函数保存图片
-            self.save(img_url)
+            print(u'没有获取到img_url*********************')
+            return None
+        # 避免非URL干扰爬虫继续
+        img_url_reg = re.compile('http://.*?\.jpg', re.S)
+        if re.match(img_url_reg, img_url):
+            # 套图所有的图片地址添加到self.img_urls
+            self.img_urls.append(img_url)
+            # 判断page_num是否是最后一页，如果是就将数据插入到数据库中
+            if int(max_span) == page_num:
+                self.save(img_url)
+                post = {
+                    '标题': self.title,
+                    '主题页面': self.url,
+                    '图片地址': self.img_urls,
+                    '获取时间': datetime.now()
+                }
+                self.meizitu_collection.save(post)
+                print(u'插入数据库成功')
+                print('=======>>>>>>>DB')
+            # 不是最后一页，继续保存图片
+            else:
+                # 调用save函数保存图片
+                self.save(img_url)
+        else:
+            print(u'图片不是有效的连接地址!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
 
     def save(self, img_url):
         """
