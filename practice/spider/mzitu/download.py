@@ -7,7 +7,7 @@ import random
 import time
 
 
-class Download():
+class Download:
     """
     发起request的类，在爬取过程中不断更换User-Agent和ip proxy
     让服务器认为是不同的浏览器和用户在访问，避免被拒绝访问
