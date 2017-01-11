@@ -118,6 +118,8 @@ class Mzitu:
                     '获取时间': datetime.now()
                 }
                 self.meizitu_collection.save(post)
+                # 每次post完清空一下，不然后面太多了
+                self.urls = []
                 print(u'插入数据库成功')
                 print('=======>>>>>>>DB')
             # 不是最后一页，继续保存图片
