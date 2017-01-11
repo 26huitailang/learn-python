@@ -133,6 +133,8 @@ class Mzitu:
         """
         # 图片URL的倒数9位到5位为图片名称
         name = img_url[-9:-4]
+        # 如果名字出现像12/01.jpg的话windows会no such file directory
+        name = re.sub(r'/', '-', name)
         # 请求，获取图片URL的Response
         img = request.get(img_url, 3)
         # 打开文件文件，ab 为追加二进制模式，因为要写入图片
