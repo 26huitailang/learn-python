@@ -5,7 +5,8 @@ import re
 import scrapy
 from bs4 import BeautifulSoup
 from scrapy.http import Request  # 跟进URL的时候用
-from dingdian_scrapy.items import DingdianScrapyItem
+from dingdian_scrapy.items import DingdianScrapyItem, DcontentItem
+from dingdian_scrapy.mysqlpipelines.sql import Sql
 
 
 class Myspider(scrapy.Spider):
@@ -35,27 +36,73 @@ class Myspider(scrapy.Spider):
             """
 
     def get_name(self, response):
-        tds = BeautifulSoup(response.txt, 'lxml').find_all(
+        tds = BeautifulSoup(response.text, 'lxml').find_all(
             'tr', bgcolor='#FFFFFF')
         for td in tds:
             novelname = td.find('a').get_text()
             novelurl = td.find('a')['href']
             # meta字典，是Scrapy传递额外数据的方法
-            yield Request(novelurl, callback=self.get_chapterurl, meta={'name': novelname, 'url': novelurl})
+            yield Request(
+                novelurl,
+                callback=self.get_chapterurl,
+                meta={'name': novelname,
+                      'url': novelurl})
 
     def get_chapterurl(self, response):
         item = DingdianScrapyItem()
-        item['name'] = str(response.meta['name']).replace('\xa0', '')  # 替换空格的字符表达
+        item['name'] = str(response.meta['name']).replace(
+            '\xa0', '')  # 替换空格的字符表达
         item['novelurl'] = response.meta['url']
-        serialstatus = BeautifulSoup(response.text, 'lxml').find('table').find_all('td')[2].get_text()
-        serialnumber = BeautifulSoup(response.text, 'lxml').find('table').find_all('td')[4].get_text()
-        category = BeautifulSoup(response.text, 'lxml').find('table').find_all('a').get_text()
-        author = BeautifulSoup(response.text, 'lxml').find('table').find_all('td')[1].get_text()
-        bash_url = BeautifulSoup(response.text, 'lxml').find('p', class_='btnlinks').find('a', class_='read')['href']
+        serialstatus = BeautifulSoup(response.text, 'lxml').find(
+            'table').find_all('td')[2].get_text()
+        serialnumber = BeautifulSoup(response.text, 'lxml').find(
+            'table').find_all('td')[4].get_text()
+        category = BeautifulSoup(response.text, 'lxml').find(
+            'table').find('a').get_text()
+        author = BeautifulSoup(response.text, 'lxml').find(
+            'table').find_all('td')[1].get_text()
+        bash_url = BeautifulSoup(response.text, 'lxml').find(
+            'p', class_='btnlinks').find('a', class_='read')['href']
         name_id = str(bash_url)[-6:-1].replace('/', '')
         item['serialstatus'] = str(serialstatus).strip()
         item['serialnumber'] = str(serialnumber).strip()
         item['category'] = str(category).replace('/', '')
         item['author'] = str(author).replace('/', '').strip()
         item['name_id'] = name_id
+        yield item
+        yield Request(
+            url=bash_url,
+            callback=self.get_chapter,
+            meta={'name_id': name_id})
+
+    def get_chapter(self, response):
+        urls = re.findall(
+            r'<td class="L"><a href="(.*?)">(.*?)</a></td>', response.text)
+        num = 0
+        for url in urls:
+            num += 1
+            chapterurl = response.url + url[0]
+            chaptername = url[1]
+            rets = Sql.select_chapter(chapterurl)
+            if rets[0] == 1:
+                print('章节已经存在了')
+                pass
+            else:
+                yield Request(chapterurl,
+                              callback=self.get_chaptercontent,
+                              meta={'num': num,
+                                    'name_id': response.meta['name_id'],
+                                    'chaptername': chaptername,
+                                    'chapterurl': chapterurl})
+
+    def get_chaptercontent(self, response):
+        item = DcontentItem()
+        item['num'] = response.meta['num']
+        item['id_name'] = response.meta['name_id']
+        item['chaptername'] = str(
+            response.meta['chaptername']).replace('\xa0', '')
+        item['chapterurl'] = response.meta['chapterurl']
+        content = BeautifulSoup(response.text, 'lxml').find(
+            'dd', id='contents').get_text()
+        item['chaptercontent'] = str(content).replace('\xa0', '')
         return item
