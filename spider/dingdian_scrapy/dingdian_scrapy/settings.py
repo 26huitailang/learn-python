@@ -69,7 +69,7 @@ ROBOTSTXT_OBEY = True
 #}
 # 1-1000值越低，组件的优先级越高
 ITEM_PIPELINES = {
-    'dingdian_scrapy.mysqlpipelines.pipelines.DingdianPipelines': 1,
+    'dingdian_scrapy.mysqlpipelines.pipelines.DingdianPipeline': 1,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
