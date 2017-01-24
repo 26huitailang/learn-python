@@ -18,3 +18,12 @@ class DingdianScrapyItem(scrapy.Item):
     serialnumber = scrapy.Field()  # 连载字数
     category = scrapy.Field()  # 分类
     name_id = scrapy.Field()  # 小说ID
+
+
+class DcontentItem(scrapy.Item):
+
+    id_name = scrapy.Field()  # 小说编号
+    chaptercontent = scrapy.Field()  # 章节内容
+    num = scrapy.Field()  # 用于保持异步中章节的顺序
+    chapterurl = scrapy.Field()  # 章节地址
+    chaptername = scrapy.Field()  # 章节名字
