@@ -1,11 +1,20 @@
+# coding=utf-8
 from .sql import Sql
 from dingdian_scrapy.items import DingdianScrapyItem
 from dingdian_scrapy.items import DcontentItem
 
 
 class DingdianPipeline(object):
-
+    """
+    process_item:判定item类型，调用sql中定义的方法插入数据
+    """
     def process_item(self, item, spider):
+        """
+        处理item，决定数据存入数据库
+        :param item:items.py中定义的数据结构的实例
+        :param spider:爬虫
+        :return:
+        """
         if isinstance(item, DingdianScrapyItem):
             name_id = item['name_id']
             ret = Sql.select_name(name_id)
