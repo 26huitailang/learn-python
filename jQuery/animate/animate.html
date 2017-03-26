@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>动画效果</title>
+    <script src="../jquery-3.2.0.js"></script>
+</head>
+<body>
+    <h3>动画效果</h3>
+    <input type="button" id="btn" value="点击看效果"/>
+    <div style="width:80px;height:80px;background-color:#FF9966"></div>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            $("div").animate({
+                width: "660px",
+                height: "800px"
+            },"slow", function () {
+                $("div").animate({
+                    width: "80px",
+                    height: "80px"
+                }, 3000)
+            });
+        });
+    });
+</script>
+</body>
+</html>

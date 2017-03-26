@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>表单对象属性过滤选择器</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style>
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        div {
+            display: none
+        }
+
+        select {
+            height: 66px
+        }
+
+        .claIpt {
+            width: 100px;
+            padding: 4px
+        }
+
+        .GetFocus {
+            border: solid 1px #666;
+            background-color: #eee
+        }
+
+    </style>
+</head>
+<body>
+<form id="form1" style="width:244px">
+    <div id="divA">
+        <input type="text" class="clsIpt" value="可用文本框"/>
+        <input type="text" class="clsIpt" value="不可用文本框" disabled="disabled"/>
+    </div>
+    <div id="divB">
+        <input type="checkbox" checked="checked" value="1"/>选中
+        <input type="checkbox" value="0"/>未选中
+    </div>
+    <div id="divC">
+        <select multiple="multiple">
+            <option value="0">Option 0</option>
+            <option value="1" selected="selected">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3" selected="selected">Option 3</option>
+        </select>
+        <span id="Span2"></span>
+    </div>
+</form>
+</body>
+<script>
+    $(function () { //增加表单中所有属性为可用的元素类别
+        $("#divA").show(3000);
+        $("#form1 input:enabled").addClass("GetFocus");
+    });
+    $(function () { //增加表单中所有属性为不可用的元素类别  2
+        $("#divA").show(3000);
+        $("#form1 input:disabled").addClass("GetFocus");
+    });
+    $(function () { //增加表单中所有被选中的元素类别  3
+        $("#divB").show(3000);
+        $("#form1 input:checked").addClass("GetFocus");
+    });
+    $(function () { //显示表单中所有option的元素内容  4
+        $("#divC").show(3000);
+        $("#Span2").html("选中项是：" + $("select option:selected").text());
+    })
+</script>
+</html>

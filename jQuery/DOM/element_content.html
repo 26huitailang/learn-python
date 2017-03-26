@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>操作元素内容</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style>
+        body {
+            font-size: 15px;
+            text-align: center
+        }
+
+        div {
+            border: solid 1px #666;
+            padding: 5px;
+            width: 220px;
+            margin: 5px
+        }
+
+    </style>
+</head>
+<body>
+<div id="divShow"><b><i>几天不见你又瘦了</i></b></div>
+<div id="divHtml"></div>
+<div id="divText"></div>
+</body>
+<script>
+    $(function () { //增加表单中所有属性为可用的元素类别
+        var $strHtml = $("#divShow").html();//获取HTML内容
+        var $strText = $("#divShow").text();//获取文本内容
+        $("#divHtml").html($strHtml);//设置HTML内容
+        $("#divText").text($strText);//设置文本内容
+    })
+</script>
+</html>

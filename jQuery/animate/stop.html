@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>停止效果</title>
+    <script src="../jquery-3.2.0.js"></script>
+    <style>
+        #panel{
+    width:200px;
+    height:55px;
+    padding:15px;
+    background-color:#CCCC99;
+    border:solid 1px #c3c3c3
+}
+#flip{
+    width:200px;
+    height:15px;
+    padding:15px;
+    background-color:#CCCC99;
+    border:solid 1px #c3c3c3
+}
+
+    </style>
+</head>
+<body>
+    <h3>停止效果</h3>
+    <button id="stop">停止滑动</button>
+    <div id="flip">点击这里，向下滑动面板</div>
+    <div id="panel">Hello world!</div>
+<script>
+    $(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle(5000);
+        });
+        $("#stop").click(function () {
+            $("#panel").stop();
+        });
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>加载服务器数据</title>
+    <script src="../jquery-3.2.0.js"></script>
+    <style>
+        .accordion {
+            width: 500px;
+            border: 1px solid #ccc;
+            border-bottom: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        .accordion dt, .accordion dd {
+            border-bottom: 1px solid #ccc;
+            margin: 0px;
+        }
+
+        .accordion dt {
+            background: #eaeaea;
+            cursor: pointer;
+            padding: 8px 4px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .accordion dd {
+            padding: 12px 8px;
+        }
+
+    </style>
+</head>
+<body>
+<dl class="accordion" id="my-accordion">
+    <dt>Section 1</dt>
+    <dd>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.</dd>
+    <dt>Section 2</dt>
+    <dd>Vestibulum a velit eu ante scelerisque vulputate.</dd>
+    <dt>Section 3</dt>
+    <dd>Nam mi. Proin viverra leo ut odio. Curabitur malesuada.</dd>
+    <dt>Section 4</dt>
+    <dd>Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc.</dd>
+</dl>
+<script>
+    (function ($) {
+        $.fn.accordion = function (options) {
+            return this.each(function () {
+                //插件代码
+                var dts = $(this).children('dt');
+                dts.click(onClick);
+                dts.each(reset);
+            });
+            function onClick() {
+                $(this).siblings('dt').each(hide);
+                $(this).next().slideDown('fast');
+                return false;
+            }
+
+            function hide() {
+                $(this).next().slideUp('fast');
+            }
+
+            function reset() {
+                $(this).next().hide();
+            }
+        };
+    })(jQuery);
+    $(function () {
+        $('dl#my-accordion').accordion();
+    })
+</script>
+</body>
+</html>

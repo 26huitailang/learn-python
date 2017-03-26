@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>包裹元素</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style>
+        div{
+    border:solid 1px #666;
+    padding:5px;
+    width:220px;
+    margin:5px
+}
+
+    </style>
+</head>
+<body>
+    <p>一周中最喜欢的是：<span>周五</span></p>
+    <p>一周中最不喜欢的是：<span>周一</span></p>
+</body>
+<script>
+$(function(){
+    $("p").wrap("<b></b>");//所有段落标记字体加粗
+    $("span").wrapInner("<i></i>");//所有段落中的span标记斜体
+})
+</script>
+</html>

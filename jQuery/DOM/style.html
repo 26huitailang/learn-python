@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>操作元素样式</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style>
+        body {
+            font-size: 15px;
+            text-align: center
+        }
+
+        div {
+            border: solid 1px #666;
+            padding: 5px;
+            width: 220px;
+            margin: 5px
+        }
+
+        .blue {
+            background-color: blue
+        }
+    </style>
+</head>
+<body>
+<h3>css()方法设置元素样式</h3>
+<div id="content0">我穿了一件红色外衣</div>
+<div id="content1">我穿了一件红色外衣</div>
+<div>
+    <button id="rem">脱下蓝色的外衣</button>
+</div>
+</body>
+<script>
+    $(function () { //增加表单中所有属性为可用的元素类别
+        $("#content0").css("background-color", "red");
+        $("#content1").addClass("blue");
+        $("#rem").click(function () {//click点击事件我们将在后面介绍到。
+            $("#content1").removeClass("blue");
+        })
+    })
+</script>
+</html>

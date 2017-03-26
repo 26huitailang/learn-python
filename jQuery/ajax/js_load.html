@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>加载js文件并执行</title>
+    <script src="../jquery-3.2.0.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="获取信息"/>
+<div id="div1"></div>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            $.getScript("getScript.js")
+        })
+    })
+</script>
+</body>
+</html>

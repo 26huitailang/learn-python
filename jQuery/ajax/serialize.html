@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>序列化表单值</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+<form action="">
+    姓名: <input type="text" name="name" value="xiaoming"/><br/>
+    格言: <input type="text" name="geyan" value="bigbig"/><br/>
+</form>
+<input type="button" id="btn" value="序列化表单值"/>
+<div></div>
+<script>
+    $(function () {
+        $("#btn").click(function () {
+            $("div").text($("form").serialize());
+        });
+    })
+</script>
+</body>
+</html>

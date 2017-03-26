@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>加载JSON格式数据</title>
+    <script src="../jquery-3.2.0.js"></script>
+</head>
+<body>
+<input type="button" id="btn" value="获取信息"/>
+<div id="div1"></div>
+<script>
+    $(function () {
+        $("#btn").click(function () {//按钮单击事件
+            $.getJSON("json_data.json", function (data) {
+                var str = "";//初始化保存内容变量
+                //遍历获取的数据
+                $.each(data, function (InfoIndex, info) {
+                    str += "姓名：" + info["name"] + "\n";
+                    str += "格言：" + info["desc"] + "";
+                });
+                $("#div1").html(str);//显示处理后的数据
+            })
+        })
+    })
+</script>
+</body>
+</html>

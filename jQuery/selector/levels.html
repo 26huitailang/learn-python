@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title> 使用jQuery层次选择器 </title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        div, span {
+            float: left;
+            border: solid 1px #ccc;
+            margin: 8px
+        }
+
+        .clsFraA {
+            width: 65px;
+            height: 65px
+        }
+
+        .clsFraP {
+            width: 45px;
+            height: 45px;
+            background-color: #eee
+        }
+
+        .clsFraP {
+            width: 25px;
+            height: 25px;
+            background-color: #ddd
+        }
+    </style>
+</head>
+<body>
+<div class="clsFraA">Left</div>
+<div class="clsFraA" id="divMid">
+        <span>
+            <span class="clsFraC" id="Span2">Span</span>
+        </span>
+</div>
+<div class="clsFraA">Right_1</div>
+<div class="clsFraA">Right_2</div>
+<script type="text/javascript">
+    $(function () { //匹配后代元素
+        $("div span").css("display", "none");//隐藏div中所有的<span>标记
+    });
+    $(function () { //匹配子元素
+        $("div>span").css("display", "none");//隐藏div中子span标记
+    });
+    $(function () { //匹配后面元素
+        $("#divMid + div").css("display", "none");//隐藏id为divMid元素后的下一个div
+        $("#divMid").next().css("display", "none");
+    });
+    $(function () { //匹配所有后面元素
+        $("#divMid ~ div").css("display", "none");//隐藏id为divMid元素后的所有div
+        $("#divMid").nextAll().css("display", "none");
+    });
+    $(function () { //匹配所有相邻元素
+        $("#divMid").siblings("div").css("display", "none");//隐藏id为divMid元素的所有相邻div
+    });
+</script>
+</body>
+</html>

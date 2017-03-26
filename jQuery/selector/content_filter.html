@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery内容过滤选择器</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        div {
+            float: left;
+            width: 66px;
+            height: 66px;
+            margin: 9px;
+            border: solid 1px #ccc;
+            display: none
+        }
+
+        span {
+            float: left;
+            width: 44px;
+            height: 44px;
+            margin: 9px;
+            border: solid 1px #ccc;
+            background-color: #eee
+        }
+
+    </style>
+</head>
+<body>
+<div>Div1</div>
+<div>2</div>
+<div></div>
+<div><span>Span</span></div>
+</body>
+<script>
+    $(function () { //显示包含给定文本的元素
+        $("div:contains('Div')").css("display", "block");
+    });
+    $(function () { //显示所有不包含子元素或者文本的空元素
+        $("div:empty").css("display", "block");
+    });
+    $(function () { //显示含有选择器所匹配的元素
+        $("div:has(span)").css("display", "block");//显示含有span标记的元素
+    });
+    $(function () { //显示含有子元素或者文本的元素
+        $("div:parent").css("display", "block");
+    });
+</script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery属性过滤选择器</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        div {
+            float: left;
+            width: 66px;
+            height: 66px;
+            margin: 9px;
+            border: solid 1px #ccc;
+            display: none
+        }
+
+    </style>
+</head>
+<body>
+<div id="divID">ID</div>
+<div title="A">title A</div>
+<div id="divAB" title="AB">ID<br/>title AB</div>
+<div title="ABC">title ABC</div>
+</body>
+<script>
+    $(function () { //显示所有包含id属性的元素 1
+        $("div[id]").show(3000);
+    });
+    $(function () { //显示所有属性title的值是"A"的元素  2
+        $("div[title='A']").show(3000);
+    });
+    $(function () { //显示所有属性title的值不是"A"的元素  3
+        $("div[title!='A']").show(3000);
+    });
+    $(function () { //显示所有属性title的值是"A"开始的元素  4
+        $("div[title^='A']").show(3000);
+    });
+    $(function () { //显示所有属性title的值是"C"结束的元素  5
+        $("div[title$='C']").show(3000);
+    });
+    $(function () { //显示所有属性title的值中含有"B"的元素  6
+        $("div[title*='B']").show(3000);
+    });
+    $(function () { //显示所有属性title的值中含有"B"且属性id的值是“divAB”的元素   7
+        $("div[id='divAB'][title*='B']").show(3000);
+    });
+</script>
+</html>

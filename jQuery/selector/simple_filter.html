@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> 使用jQuery基本过滤选择器 </title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        div {
+            width: 241px;
+            height: 83px;
+            border: solid 1px #ccc
+        }
+
+        h1 {
+            font-size: 13px
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0px
+        }
+
+        .DefClass, .NotClass {
+            width: 60px;
+            height: 23px;
+            line-height: 23px;
+            float: left;
+            border-top: solid 1px #eee;
+            border-bottom: solid 1px #eee
+        }
+
+        .GetFocus {
+            width: 58px;
+            border-bottom: solid 1px #666;
+            background-color: #eee
+        }
+
+        #spanMove {
+            width: 238px;
+            height: 23px;
+            line-height: 23px
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>基本过滤选择器</h1>
+    <ul>
+        <li class="DefClass">Item 0</li>
+        <li class="DefClass">Item 1</li>
+        <li class="NotClass">Item 2</li>
+        <li class="DefClass">Item 3</li>
+    </ul>
+    <span id="spanMove">Span Move</span>
+</div>
+<script type="text/javascript">
+    $(function () { //增加第一个元素的类别
+        $("li:first").addClass("GetFocus");//
+    });
+    $(function () { //增加最后一个元素的类别
+        $("li:last").addClass("GetFocus"); //
+    });
+    $(function () { //增加去除所有与给定选择器匹配的元素类别
+        $("li:not(.NotClass)").addClass("GetFocus");//
+    });
+    $(function () { //增加所有索引值为偶数的元素类别，从0开始计数
+        $("li:even").addClass("GetFocus"); //
+    });
+    $(function () { //增加所有索引值为奇数的元素类别，从0开始计数
+        $("li:odd").addClass("GetFocus"); //
+    });
+    $(function () { //增加一个给定索引值的元素类别，从0开始计数
+        $("li:eq(1)").addClass("GetFocus"); //
+    });
+    $(function () { //增加所有大于给定索引值的元素类别，从0开始计数
+        $("li:gt(1)").addClass("GetFocus"); //
+    });
+    $(function () { //增加所有小于给定索引值的元素类别，从0开始计数
+        $("li:lt(4)").addClass("GetFocus"); //
+    });
+    $(function () { //增加标题类元素类别
+        $("div h1").css("width", "238"); //
+        $(":header").addClass("GetFocus"); //
+    });
+    $(function () { //增加动画效果元素类别
+        animateIt();
+        $("#spanMove:animated").addClass("GetFocus"); //
+    });
+    function animateIt() {//动画效果
+        $("#spanMove").slideToggle("slow", animateIt);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> 表单选择器 </title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style>
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        form {
+            width: 244px
+        }
+
+        textarea, select, button, input, span {
+            display: none
+        }
+
+        .btn {
+            border: solid 1px #666;
+            padding: 2px;
+            width: 60px;
+            filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorstr=#ECE9D8);
+        }
+
+        .txt {
+            border: solid 1px #666;
+            padding: 4px
+        }
+
+        .img {
+            border: solid 1px #ccc;
+            padding: 2px
+        }
+
+        .div {
+            border: solid 1px #ccc;
+            background-color: #eee;
+            padding: 5px
+        }
+
+    </style>
+</head>
+<body>
+<form id="form1" style="width:244px">
+    <input type="text" value="text" class="txt"/>
+    <input type="password" value="password" class="txt"/>
+    <input type="radio"/><span id="span1">radio</span>
+    <input type="checkbox"/>
+    <textarea class="txt">textarea</textarea>
+    <select>
+        <option value="0">item 0</option>
+    </select>
+    <span id="span2">checkbox</span>
+    <input type="submit" value="submit" class="btn"/>
+    <input type="image" title="image" src="" class="img"/>
+    <input type="reset" value="reset" class="btn"/>
+    <input type="button" value="button" class="btn"/>
+    <input type="file" title="file" class="txt"/>
+    <div id="divShow"></div>
+</form>
+</body>
+<script>
+    $(function () { //显示input类型元素的总数量 1
+        $("#form1 div").html("表单共找出input类型元素" +
+            $("#form1 :input").length);
+        $("#form1 div").addClass("div");
+    });
+    $(function () { //显示所有文本框对象  2
+        $("#form1 :text").show(3000);
+    });
+    $(function () { //显示所有密码框对象  3
+        $("#form1 :password").show(3000);
+    });
+    $(function () { //显示所有单选按钮对象  4
+        $("#form1 :radio").show(3000);
+        $("#form1 #span1").show(3000);
+    });
+    $(function () { //显示所有复选框对象  5
+        $("#form1 :checkbox").show(3000);
+        $("#form1 #span2").show(3000);
+    });
+    $(function () { //显示所有提交按钮对象  6
+        $("#form1 :submit").show(3000);
+    });
+    $(function () { //显示所有图片域对象  7
+        $("#form1 :image").show(3000);
+    });
+    $(function () { //显示所有重置按钮对象  8
+        $("#form1 :reset").show(3000);
+    });
+    $(function () { //显示所有按钮对象  9
+        $("#form1 :button").show(3000);
+    });
+    $(function () { //显示所有文件域对象  10
+        $("#form1 :file").show(3000);
+    })
+</script>
+</html>
