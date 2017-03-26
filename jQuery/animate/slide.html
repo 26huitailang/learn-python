@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>滑动效果</title>
+    <script src="../jquery-3.2.0.js"></script>
+    <style>
+        div {
+            width: 222px;
+            height: 83px;
+            background-color: #e5eecc;
+            margin: 0px
+        }
+
+        #btn {
+            width: 222px;
+            height: 23px;
+            background-color: #e5eecc;
+            margin-bottom: 0px
+        }
+
+    </style>
+</head>
+<body>
+<div id="div1">
+    吃香蕉不薄皮<br/>
+    吃葡萄不吐皮
+</div>
+<button id="btn" style="">点击这里，看效果</button>
+<div id="div2" style="display:none">
+    有没有点小小激动呢<br/>
+    想起那在夕阳下奔跑，那..那是我
+    逝去的青春
+</div>
+<script>
+    $(function () {//slideDown()方法
+        $("button").click(function () {
+            $("#div1").slideDown("slow");
+        });
+    });
+    $(function () {//slideUp()方法
+        $("button").click(function () {
+            $("#div2").slideUp("slow");
+        });
+    });
+    $(function () {//slideToggle()方法
+        $("button").click(function () {
+            $("#div2").slideToggle("slow");
+        });
+    });
+</script>
+</body>
+
+</html>

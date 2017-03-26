@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery子元素过滤选择器</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <style type="text/css">
+        body {
+            font-size: 12px;
+            text-align: center
+        }
+
+        ul {
+            width: 241px;
+            list-style-type: none;
+            padding: 0px
+        }
+
+        ul li {
+            height: 23px;
+            width: 60px;
+            line-height: 23px;
+            float: left;
+            border-top: solid 1px #eee;
+            border-bottom: solid 1px #eee;
+            margin-bottom: 5px
+        }
+
+        .GetFocus {
+            width: 58px;
+            border: solid 1px #666;
+            background-color: #eee
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li>item 1-0</li>
+    <li>item 1-1</li>
+    <li>item 1-2</li>
+    <li>item 1-3</li>
+</ul>
+<ul>
+    <li>item 2-0</li>
+    <li>item 2-1</li>
+    <li>item 2-2</li>
+    <li>item 2-3</li>
+</ul>
+<ul>
+    <li>item 3-0</li>
+</ul>
+</body>
+<script>
+    $(function () { //增加每个父元素下的第2个子元素类别 1
+        $("li:nth-child(2)").addClass("GetFocus");
+    });
+    $(function () {  //odd even eq index
+        $("li:nth-child(odd)").addClass("GetFocus");
+    });
+    $(function () { //增加每个父元素下的第1个子元素类别  2
+        $("li:first-child").addClass("GetFocus");
+    });
+    $(function () { //增加每个父元素下的最后一个子元素类别  3
+        $("li:last-child").addClass("GetFocus");
+    });
+    $(function () { //增加每个父元素下只有一个子元素类别  4
+        $("li:only-child").addClass("GetFocus");
+    })
+</script>
+</html>

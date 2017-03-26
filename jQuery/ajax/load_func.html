@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>load()方法加载数据</title>
+    <script src="../jquery-3.2.0.js"></script>
+</head>
+<body>
+<h3 id="test">请点击下面的按钮，通过 jQuery AJAX 改变这段文本。</h3>
+<button id="btn1" type="button">获得外部的内容</button>
+<script>
+    $(function () {
+        $("button").click(function () {
+            $("#test").load("load.html");
+        })
+    })
+</script>
+</body>
+</html>

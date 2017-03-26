@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>加载服务器数据</title>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+<div id="myDiv"><h2>通过 AJAX 改变文本</h2></div>
+<button id="b01" type="button">改变内容</button>
+<script type="text/javascript">
+    $(function () {
+        $("#b01").click(function () {
+            htmlobj = $.ajax({url: "ajax.txt", async: false});
+            $("#myDiv").html(htmlobj.responseText);
+        });
+    })
+</script>
+</body>
+</html>

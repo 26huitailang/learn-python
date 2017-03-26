@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>向元素内追加内容</title>
+    <script src="../jquery-3.2.0.js"></script>
+    <style>
+        body {
+            font-size: 15px;
+            text-align: center
+        }
+
+        div {
+            border: solid 1px #666;
+            padding: 5px;
+            width: 220px;
+            margin: 5px
+        }
+
+    </style>
+</head>
+<body>
+<p id="id1">append()追加内容：</p>
+<p id="id2">appendTo()追加内容：</p>
+<p id="id3">before()追加到前面</p>
+<p id="id4">after()追加到后面</p>
+</body>
+<script type="text/javascript">
+    $(function () { //增加表单中所有属性为可用的元素类别
+        var $content = "**我是append()方法追加的内容**";
+        var $contentTo = "**我是appendTo()方法追加的内容**";
+        var $before = "**我是before()方法追加到前面的内容**";
+        var $after = "**我是before()方法追加到后面的内容**";
+        $("#id1").append($content);
+        $("#id3").before($before);
+        $("#id4").after($after);
+    });
+</script>
+</html>
