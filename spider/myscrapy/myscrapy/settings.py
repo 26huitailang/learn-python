@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'myscrapy.pipelines.DyttPipeline': 300,
+   'myscrapy.pipelines.DyttZuixinPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -92,3 +92,4 @@ HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 # dytt DB settings
 DYTT_MONGODB = 'dytt'
 DYTT_COL = 'zuixindianying'
+DYTT_ZUIXIN_COL = 'zuixin'
