@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # coding: utf-8
+'python2环境'
 import urllib
 import re
 
