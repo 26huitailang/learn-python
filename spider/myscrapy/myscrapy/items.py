@@ -27,3 +27,10 @@ class DyttItem(scrapy.Item):
     download_url = scrapy.Field()
 
 
+class TorrentItem(scrapy.Item):
+    url = scrapy.Field()
+    name = scrapy.Field()
+    description = scrapy.Field()
+    size = scrapy.Field()
+
+
