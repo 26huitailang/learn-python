@@ -11,7 +11,7 @@ with open(file) as f:
         name = items[0][0]
         # print name
         fmt = items[0][1]
-        print name, fmt
+        print(name, fmt)
         img = requests.get(line)
         imgfile = open('d:\mzitu\\' + name + '.' + fmt, 'ab')
         imgfile.write(img.content)

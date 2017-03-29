@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # coding: utf-8
 
-import urllib2
+import urllib
 import re
 
 
@@ -27,16 +27,16 @@ class Qiubai:
         try:
             url = 'http://www.qiushibaike.com/hot/page/' + str(pageIndex)
             # 构建request
-            request = urllib2.Request(url, headers=self.headers)
+            request = urllib.request.Request(url, headers=self.headers)
             # 利用urlopen获取页面代码
-            response = urllib2.urlopen(request)
+            response = urllib.request.urlopen(request)
             # 页面转为utf-8编码
             pageCode = response.read().decode("utf8")
             return pageCode
         # 捕获错误原因
-        except urllib2.URLError, e:
+        except urllib.error.URLError as e:
             if hasattr(e, "reason"):
-                print u"连接糗事百科失败，错误原因", e.reason
+                print(u"连接糗事百科失败，错误原因", e.reason)
                 return None
 
     def getPageItems(self, pageIndex):
@@ -47,7 +47,7 @@ class Qiubai:
         pageCode = self.getPage(pageIndex)
         # 如果获取失败，返回None
         if not pageCode:
-            print "页面加载失败..."
+            print("页面加载失败...")
             return None
         # 匹配模式
         pattern = re.compile(
@@ -91,7 +91,7 @@ class Qiubai:
         # 循环访问一页的段子
         for story in pageStories:
             # 等待用户输入，回车输出段子，q退出
-            input = raw_input()
+            input = input()
             self.loadPage()
             # 如果用户输入q退出
             if input == "q":
@@ -99,13 +99,13 @@ class Qiubai:
                 self.enable = False
                 return
             # 打印story:0 name, 1 content, 2 votes
-            print u"第%d页\t发布人:%s\t\3:%s\n%s" % (page, story[0], story[2], story[1])
+            print(u"第%d页\t发布人:%s\t\3:%s\n%s" % (page, story[0], story[2], story[1]))
 
     def start(self):
         """
         开始方法
         """
-        print u"正在读取糗事百科，回车查看新段子，q退出"
+        print(u"正在读取糗事百科，回车查看新段子，q退出")
         # 程序运行变量True
         self.enable = True
         # 加载一页内容
