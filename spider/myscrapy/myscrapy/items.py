@@ -34,3 +34,7 @@ class TorrentItem(scrapy.Item):
     size = scrapy.Field()
 
 
+class Article(scrapy.Item):
+    title = scrapy.Field()
+
+
