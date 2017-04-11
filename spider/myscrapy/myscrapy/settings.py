@@ -83,13 +83,19 @@ ITEM_PIPELINES = {
 
 # Enable and configure HTTP caching (disabled by default)
 # See http://scrapy.readthedocs.org/en/latest/topics/downloader-middleware.html#httpcache-middleware-settings
-HTTPCACHE_ENABLED = True
-HTTPCACHE_EXPIRATION_SECS = 0
-HTTPCACHE_DIR = 'httpcache'
-HTTPCACHE_IGNORE_HTTP_CODES = []
-HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+# HTTPCACHE_ENABLED = True
+# HTTPCACHE_EXPIRATION_SECS = 0
+# HTTPCACHE_DIR = 'httpcache'
+# HTTPCACHE_IGNORE_HTTP_CODES = []
+# HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # dytt DB settings
 DYTT_MONGODB = 'dytt'
 DYTT_COL = 'zuixindianying'
 DYTT_ZUIXIN_COL = 'zuixin'
+
+# log设置日志层级
+# 五种：CRETICAL/ERROR/WARNING/DEBUG/INFO
+# 如果日志层级设置为 ERROR，那么只有 CRITICAL 和 ERROR 日志会显示出来。
+# 如果日志层级设置为 INFO，那么所有信息都会显示出来，其他同理。
+LOG_LEVEL = 'ERROR'
