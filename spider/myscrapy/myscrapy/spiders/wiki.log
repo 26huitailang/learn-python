@@ -1,0 +1,38 @@
+2017-04-06 17:54:34 [scrapy] ERROR: Spider error processing <GET https://en.wikipedia.org/wiki/The_Heart_of_a_Woman> (referer: https://en.wikipedia.org/wiki/Main_Page)
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spiders\crawl.py", line 72, in _parse_response
+    cb_res = callback(response, **cb_kwargs) or ()
+  File "D:\git-checkout\learn-sth-everyday\spider\myscrapy\myscrapy\spiders\wikiSpider.py", line 20, in parse_item
+    title = response.xpath('//h1/text()')[0].extract()
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\parsel\selector.py", line 58, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
+2017-04-06 17:54:38 [scrapy] ERROR: Spider error processing <GET https://en.wikipedia.org/wiki/Mammal_Species_of_the_World> (referer: https://en.wikipedia.org/wiki/Camas_pocket_gopher)
+Traceback (most recent call last):
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\utils\defer.py", line 102, in iter_errback
+    yield next(it)
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spidermiddlewares\depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\scrapy\spiders\crawl.py", line 72, in _parse_response
+    cb_res = callback(response, **cb_kwargs) or ()
+  File "D:\git-checkout\learn-sth-everyday\spider\myscrapy\myscrapy\spiders\wikiSpider.py", line 20, in parse_item
+    title = response.xpath('//h1/text()')[0].extract()
+  File "D:\Anaconda3\envs\scrapy\lib\site-packages\parsel\selector.py", line 58, in __getitem__
+    o = super(SelectorList, self).__getitem__(pos)
+IndexError: list index out of range
