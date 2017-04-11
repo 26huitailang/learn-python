@@ -1,0 +1,5 @@
+../img/gifts/img1.jpg
+../img/gifts/img2.jpg
+../img/gifts/img3.jpg
+../img/gifts/img4.jpg
+../img/gifts/img6.jpg
