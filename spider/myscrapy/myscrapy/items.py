@@ -6,6 +6,7 @@
 # http://doc.scrapy.org/en/latest/topics/items.html
 
 import scrapy
+from scrapy import Item, Field
 
 
 class MyscrapyItem(scrapy.Item):
@@ -36,5 +37,12 @@ class TorrentItem(scrapy.Item):
 
 class Article(scrapy.Item):
     title = scrapy.Field()
+
+
+class ClImg(Item):
+    item_url = Field()
+    title = Field()
+    img_urls = Field()
+    download = Field() # 0 没有 1 完成
 
 
