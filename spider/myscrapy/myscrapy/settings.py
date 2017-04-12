@@ -65,7 +65,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'myscrapy.pipelines.DyttZuixinPipeline': 300,
+   # 'myscrapy.pipelines.DyttZuixinPipeline': 300,
+   'myscrapy.pipelines.ClPipeline': 300
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -93,6 +94,10 @@ ITEM_PIPELINES = {
 DYTT_MONGODB = 'dytt'
 DYTT_COL = 'zuixindianying'
 DYTT_ZUIXIN_COL = 'zuixin'
+
+# CL DB
+CL_MONGODB = 'cl'
+CL_COL = 'climg'
 
 # log设置日志层级
 # 五种：CRETICAL/ERROR/WARNING/DEBUG/INFO

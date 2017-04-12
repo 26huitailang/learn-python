@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from scrapy.contrib.spiders import CrawlSpider, Rule
+from scrapy.spiders import CrawlSpider, Rule
 from scrapy.selector import Selector
 from ..items import Article
 from scrapy.linkextractors import LinkExtractor
