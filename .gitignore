@@ -2,3 +2,5 @@
 *.pyc
 .vscode/
 .scrapy/
+.cache/
+__pycache__
