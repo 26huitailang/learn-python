@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from celery.schedules import crontab
 
 CELERY_RESULT_BACKEND = 'redis://127.0.0.1:6379/5'
