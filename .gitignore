@@ -4,3 +4,4 @@
 .scrapy/
 .cache/
 __pycache__
+celerybeat-schedule
