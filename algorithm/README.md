@@ -19,7 +19,7 @@
 
 这个是用`plot_data.py`绘制的各个排序算法在不同量级的比较，太慢的我就屏蔽了。
 
-![compare]('.\tests\compare.png')
+![compare]('https://raw.githubusercontent.com/26huitailang/learn-sth-everyday/master/algorithm/sort/compare.png')
 
 - [x] Hash，见`/Hash`目录。
 
