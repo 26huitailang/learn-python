@@ -21,10 +21,7 @@
 
 ![compare](https://github.com/26huitailang/learn-sth-everyday/raw/master/algorithm/sort/compare.png)
 
-![compare](./sort/compare.png)
-
 - [x] Hash，见`/Hash`目录。
-
 
 ## 稳定排序和不稳定排序
 
