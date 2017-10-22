@@ -2,8 +2,9 @@
 # coding: UTF-8
 
 import datetime
-now = datetime.datetime.now
 from functools import wraps
+
+now = datetime.datetime.now
 
 
 def cache(func):
@@ -30,10 +31,10 @@ start = now()
 for i in range(10):
     fib(30)
 end = now()
-print "Fib without cache costs: %r" % (end - start)
+print("Fib without cache costs: %r" % (end - start))
 
 start = now()
-for i in range(10):
+for _ in range(10):
     fib_with_cache(30)
 end = now()
-print "Fib with cache costs: %r" % (end - start)
+print("Fib with cache costs: %r" % (end - start))
