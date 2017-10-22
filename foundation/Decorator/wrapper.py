@@ -13,7 +13,8 @@ def log(func):  # 被装饰的函数作为参数传入装饰器函数
 
 
 '''
-如果decorator本身需要传入参数，那就需要编写一个返回decorator的高阶函数，写出来会更复杂。比如，要自定义log的文本：
+如果decorator本身需要传入参数，那就需要编写一个返回decorator的高阶函数，
+写出来会更复杂。比如，要自定义log的文本：
 '''
 def log1(text):
     def decorator(func):
@@ -25,7 +26,8 @@ def log1(text):
 
 
 """
-因为返回的那个wrapper()函数名字就是'wrapper'，所以，需要把原始函数的__name__等属性复制到wrapper()函数中，否则，有些依赖函数签名的代码执行就会出错。
+因为返回的那个wrapper()函数名字就是'wrapper'，所以，需要把原始函数的__name__等属性
+复制到wrapper()函数中，否则，有些依赖函数签名的代码执行就会出错。
 
 不需要编写wrapper.__name__ = func.__name__这样的代码，
 Python内置的functools.wraps就是干这个事的，
