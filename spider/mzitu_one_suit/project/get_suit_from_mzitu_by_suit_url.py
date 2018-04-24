@@ -104,6 +104,7 @@ def get_image_urls(suit_url):
     max_page_num = get_max_page_num(page)
     title = re.search(r'class=\"main-title\">(.+?)</', page)
     title = title.group(1).strip()
+    title = re.sub(r'[/\\:*?"<>|]', '-', title)  # windows 非法文件夹名字符
     folder = DB_PATH
     folder = os.path.join(folder, title)
     if not os.path.isdir(folder):
