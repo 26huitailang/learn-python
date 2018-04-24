@@ -6,9 +6,12 @@ import sys
 import time
 import os
 import random
+import json
+import threading
 
 from .get_proxies import GetProxies
 from .runtimes import DB_PATH
+from .redis_queue import RedisQueue
 
 
 PROXY_SOURCE_URL = 'http://www.xicidaili.com/nn/'
@@ -35,6 +38,7 @@ USER_AGENT_LIST = [
 ]
 
 get_proxies = GetProxies(PROXY_SOURCE_URL, random.choice(USER_AGENT_LIST))
+queue = RedisQueue('mzitu')
 
 
 def get_max_page_num(html):
@@ -78,7 +82,7 @@ def proxy_request(url):
     while flag:
         ip, port = get_proxies.get_random_ip()
         try:
-            time.sleep(1)
+            time.sleep(0.5)
             proxy_url = get_proxy_url(ip, port)
             proxies = {"https": proxy_url}
             # proxies = {"http": proxy_url, "https": proxy_url}
@@ -94,13 +98,7 @@ def proxy_request(url):
     return page
 
 
-def main():
-    ip_list = get_proxies.get_ip_list()
-    get_proxies.store_to_sqlite(ip_list)
-
-    suit_url = sys.argv[1]
-    print(suit_url)
-
+def get_image_urls(suit_url):
     page = proxy_request(suit_url)
 
     max_page_num = get_max_page_num(page)
@@ -120,7 +118,7 @@ def main():
             print("已存在：{}".format(filename))
             continue
 
-        time.sleep(1)
+        time.sleep(0.5)
         url = suit_url + '/{}'.format(i)
         print(url)
         page = proxy_request(url)
@@ -129,6 +127,44 @@ def main():
         img_url = img_url.groups()[1]
         print(img_url)
 
-        img_bytes = requests.get(img_url, headers=header(url))
-        with open(filename, 'wb') as f:
+        queue.put(json.dumps({'filename': filename, 'url': img_url, 'header_url': url}))
+
+    return
+
+
+def download_images_to_local():
+    while queue.qsize() < 8:
+        pass
+
+    while not queue.empty():
+        item = queue.get()
+        item = json.loads(item)
+
+        if os.path.isfile(item['filename']):
+            print("已存在：{}".format(item['filename']))
+            continue
+
+        img_bytes = requests.get(item['url'], headers=header(item['header_url']))
+        with open(item['filename'], 'wb') as f:
             f.write(img_bytes.content)
+        print("Downloaded {}".format(item['url']))
+        time.sleep(1)
+
+    return
+
+
+def main():
+    ip_list = get_proxies.get_ip_list()
+    get_proxies.store_to_sqlite(ip_list)
+
+    suit_url = sys.argv[1]
+    print(suit_url)
+
+    # 线程
+    t1_get_image_urls = threading.Thread(target=get_image_urls, args=(suit_url,))
+    t2_download_images = threading.Thread(target=download_images_to_local)
+    t1_get_image_urls.start()
+    time.sleep(4)
+    t2_download_images.start()
+    t1_get_image_urls.join()
+    t2_download_images.join()
