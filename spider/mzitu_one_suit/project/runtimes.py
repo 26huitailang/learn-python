@@ -42,6 +42,7 @@ def mark_proxy_ip_not_valid(ip, port):
     conn.commit()
     conn.close()
 
+
 def insert_proxy_ip(ip, port, is_valid=1):
     text = 'INSERT INTO proxy_ip (ip, port, is_valid) VALUES(?,?,?)'
     conn = get_conn()

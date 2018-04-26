@@ -49,13 +49,6 @@ def get_max_page_num(html):
     return int(page_num[-1])
 
 
-def check_rate(block_num, num, file_size):
-    per = 100.0 * block_num * num / file_size
-    if per > 100:
-        per = 100
-    print('%.2f%%' % per, end='\r')
-
-
 def header(referer):
     headers = {
         'Host': 'i.meizitu.net',
@@ -133,6 +126,14 @@ def get_image_urls(suit_url):
     return
 
 
+def requests_get(url, headers=None):
+    ip, port = get_proxies.get_random_ip()
+    proxy_url = get_proxy_url(ip, port)
+    proxies = {"https": proxy_url}
+
+    return requests.get(url, headers=headers, proxies=proxies)
+
+
 def download_images_to_local():
     while queue.qsize() < 8:
         pass
@@ -145,7 +146,7 @@ def download_images_to_local():
             print("已存在：{}".format(item['filename']))
             continue
 
-        img_bytes = requests.get(item['url'], headers=header(item['header_url']))
+        img_bytes = requests_get(item['url'], headers=header(item['header_url']))
         with open(item['filename'], 'wb') as f:
             f.write(img_bytes.content)
         print("Downloaded {}".format(item['url']))
