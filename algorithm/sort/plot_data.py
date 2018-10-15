@@ -1,5 +1,10 @@
 #!/usr/bin/python
 # coding: utf-8
+
+"""
+利用单元测试的结果 > logs.json作图比较不同排序算法的曲线
+"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 import json
