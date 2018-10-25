@@ -6,18 +6,33 @@ class Solution:
         """
         # answer from discussion
         characters = {
-            '{': '}',
-            '[': ']',
-            '(': ')',
+            '}': '{',
+            ']': '[',
+            ')': '(',
         }
-        cases = [""]  # 一个空字符串避免只有一个]这样符号的案例，不能pop
+        stack = []
         for i in s:
-            if i in characters:
+            if i not in characters:
                 # 将对应的后括号入栈
-                cases.append(characters[i])
+                stack.append(i)
             # 如果不是前括号，且也等于出栈的值，那么顺序不对
             # 这里是一个FILO
-            elif i not in characters.keys() and i != cases.pop():
+            elif not stack or characters[i] != stack.pop():
                 return False
+        return not stack
 
-        return cases == [""]
+
+def main():
+    sol = Solution()
+    case1 = "{}[]()"
+    assert sol.isValid(case1) is True
+    case2 = "[[({})]]"
+    assert sol.isValid(case2) is True
+    case3 = "[]]"
+    assert sol.isValid(case3) is False
+    case4 = "[(])"
+    assert sol.isValid(case4) is False
+
+
+if __name__ == '__main__':
+    main()
