@@ -11,6 +11,7 @@
 import random
 import time
 
+
 def bubble_sort(arr):
     """ 冒泡排序。
 
@@ -38,7 +39,7 @@ def optimized_bubble_sort(arr):
                 flag = True
         if not flag:
             break
-    
+
     return arr
 
 
@@ -54,6 +55,7 @@ def main():
     result_2 = optimized_bubble_sort(tmp)
     print(time.time() - start)
     # print(result_2)
-    
+
+
 if __name__ == '__main__':
     main()
