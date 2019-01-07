@@ -10,7 +10,7 @@ gevent.monkey.patch_all()
 urls = [
         # 'https://www.baidu.com',
         # 'https://www.facebook.com',
-        'https://www.google.com',
+        # 'https://www.google.com',
         # 'https://www.qq.com',
         # 'https://www.github.com',
         'http://127.0.0.1:8000/api/v1/mzitu/tags/'
@@ -24,7 +24,9 @@ def _thread_one(url, id):
         try:
             print("=" * 20)
             start = time.time()
-            resp = requests.get(url, timeout=(5, 10))
+            if count % 100 == 0:
+                raise requests.ConnectionError
+            resp = requests.get(url)
             print(resp.status_code)
             print("{} {} {}".format(id, datetime.datetime.now(), url))
         except requests.ConnectionError as e:
@@ -42,7 +44,7 @@ def sync_main():
 
 
 def gevent_main():
-    spawns = [gevent.spawn(_thread_one, url) for url in urls]
+    spawns = [gevent.spawn(_thread_one, urls[-1], id) for id in range(5)]
     gevent.joinall(spawns)
 
 if __name__ == '__main__':

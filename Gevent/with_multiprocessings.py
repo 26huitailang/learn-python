@@ -1,9 +1,13 @@
+import os
 import gevent
 import gevent.monkey
 import time
 import datetime
 import requests
 from multiprocessing import Process
+import multiprocessing
+import signal
+import random
 
 gevent.monkey.patch_all()
 
@@ -16,42 +20,45 @@ urls = [
         'https://www.github.com',
         'http://127.0.0.1:8000/api/v1/mzitu/tags/'
     ]
+processes = []
 
-
-def _process_one(url, sleep_time=0):
-    try:
-        resp = requests.get(url)
-        print(resp.status_code)
-    except requests.ConnectionError as e:
-        print("wahaha: {}".format(e))
-    print("{} {}".format(datetime.datetime.now(), url))
-    time.sleep(sleep_time)
+def _process_one(sleep_time=0):
+    while True:
+        for url in urls:
+            try:
+                resp = requests.get(url)
+                print("{} - {}".format(os.getpid(), resp.status_code))
+            except requests.ConnectionError as e:
+                print("wahaha: {}".format(e))
+            print("{} {}".format(datetime.datetime.now(), url))
+            sleep_time = random.random() * 10
+            print("sleep {}".format(sleep_time))
+            time.sleep(sleep_time)
 
 
 def process_start(task_list):
-    gevent.joinall(task_list)
+    spawn_list = [gevent.spawn(x) for x in task_list]
+    gevent.joinall(spawn_list)
 
 
-def sync_main():
-    start = time.time()
-    for url in urls:
-        resp = requests.get(url)
-        print(resp.status_code)
-        print("{} {}".format(datetime.datetime.now(), url))
-    end = time.time()
-    print(end - start)
+def term_func():
+    for process in processes:
+        process.terminate()
 
 
 def gevent_main():
-    start = time.time()
-    task_list = [gevent.spawn(_process_one, url, 1) for url in urls]
-    for t in range(4):
+    signal.signal(signal.SIGTERM, term_func)  # 注册信号，当主进程收到信号时，执行这个函数
+    task_list = [_process_one, _process_one, _process_one]
+    # p_count = multiprocessing.cpu_count()
+    p_count = 1
+    for t in range(p_count):
         p = Process(target=process_start, args=(task_list,))
+        p.daemon = True  # 子进程完毕关闭主进程
         p.start()
+        processes.append(p)
+    for p in processes:
+        p.join()
 
-    end = time.time()
-    print(end - start)
 
 if __name__ == '__main__':
     gevent_main()
-    sync_main()
