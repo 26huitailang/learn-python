@@ -1,3 +1,6 @@
+"""
+HTTP POST效率很高
+"""
 import gevent
 import gevent.monkey
 import time
@@ -30,7 +33,6 @@ class TokenAuthDWS(AuthBase):
 
 def send_api_post_request(url, token, payload):
     try:
-        # TODO(csj): 这里没有设置timeout(5, 10)，而且失败会让原本60s的任务两次的成功间隔会大大增加
         r = requests.post(url, auth=TokenAuthDWS(token), json=payload)
     except requests.ConnectionError:
         logging.warning('API server connect failed, method:POST, url:{}'.format(url))
@@ -52,8 +54,8 @@ def send_api_post_request(url, token, payload):
 def _thread_one(url, id):
     while True:
         host = 'http://127.0.0.1:8001'
-        url = '{host}/api/ss_agent/ss_agents/{pk}/port_access_log/batch_post/'.format(host=host, pk='50c5a343-28ee-4576-9389-b5f9027fb518')
-        ip = '58.93.180.252'
+        url = '{host}/api/ss_agent/ss_agents/{pk}/port_access_log/batch_post/'.format(host=host, pk='2dd2107d-f9b3-4d4c-a7d4-160b83201a28')
+        ip = '1.1.1.1'
         log = [
             {"host": "wallpap", "path": "/api/a1/lock/23","port": 2009,"datetime":"2018-01-03"},
             {"host": "234dfs", "path": "/api/a1/lock/23","port": 2009,"datetime":"2018-02-03"},

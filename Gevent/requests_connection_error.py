@@ -1,3 +1,9 @@
+"""
+验证：开启N个任务的协程，执行的时候让其中一个抛出的错误不做捕捉，看协程是否正常工作。
+
+结论：以线程方式执行协程，如果其中一个任务出错，其余几个会继续执行。
+"""
+
 import gevent
 import gevent.monkey
 import time
@@ -24,6 +30,8 @@ def _thread_one(url, id):
         try:
             print("=" * 20)
             start = time.time()
+            if id == 4:
+                raise ValueError
             if count % 100 == 0:
                 raise requests.ConnectionError
             resp = requests.get(url)

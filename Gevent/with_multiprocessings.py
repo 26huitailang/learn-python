@@ -1,3 +1,6 @@
+"""
+以进程为单位启动协程任务组，主进程处理SIGTERM信号，关闭所有子进程
+"""
 import os
 import gevent
 import gevent.monkey

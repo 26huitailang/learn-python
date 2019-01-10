@@ -1,3 +1,6 @@
+"""
+队列Block模式
+"""
 import gevent
 import gevent.monkey
 import time
@@ -7,15 +10,6 @@ from gevent import queue
 gevent.monkey.patch_all()
 
 data_queue = queue.Queue()
-
-urls = [
-        'https://www.baidu.com',
-        'https://www.facebook.com',
-        'https://www.google.com',
-        # 'http://127.0.0.1:8000/api/v1/mzitu/tags/',
-        'https://www.qq.com',
-        'https://www.github.com',
-    ]
 
 
 def push_data():
@@ -54,6 +48,7 @@ def gevent_main():
     spawns = [gevent.spawn(create_data), gevent.spawn(push_data)]
 
     gevent.joinall(spawns)
+
 
 if __name__ == '__main__':
     gevent_main()
