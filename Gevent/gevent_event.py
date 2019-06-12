@@ -27,6 +27,6 @@ def main() :
         gevent.spawn(waiter, 1),
         gevent.spawn(waiter, 2),
     ])
- 
+
 if __name__ == '__main__' :
     main()
