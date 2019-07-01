@@ -7,7 +7,7 @@ def profile(func):
         start = time.time()
         func(*args, **kw)
         end = time.time()
-        print '{} COST: {}'.format(func.__name__, end - start)
+        print('{} COST: {}'.format(func.__name__, end - start))
     return wrapper
 
 COUNTS = 100000
@@ -19,6 +19,7 @@ def jiexi():
 def xunhuan():
     l = []
     for i in range(COUNTS):
+        breakpoint()
         l.append(i ** 2)
 
 jiexi()

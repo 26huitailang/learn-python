@@ -31,6 +31,6 @@ if not os.path.exists(pipe_name):
 pid = os.fork()
 print(pid)
 if pid != 0:
-    child()
-else:
     parent()
+else:
+    child()
