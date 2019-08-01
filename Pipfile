@@ -9,6 +9,7 @@ flake8 = "*"
 
 [packages]
 jupyter = "*"
+websockets = "*"
 
 [requires]
 python_version = "3.7"
