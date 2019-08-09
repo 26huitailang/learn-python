@@ -1,7 +1,9 @@
 # -*- coding:utf-8 -*-
-#Observer.py
-from .subject import Subject
-from .display import Display
+# Observer.py
+
+
+from display import Display
+
 
 class Observer:
     def __init__(self, observable):
@@ -13,9 +15,10 @@ class Observer:
     def update(self, subject):
         pass
 
-class CurrentConditionsDisplay(Observer, Display.Display):
+
+class CurrentConditionsDisplay(Observer, Display):
     def __init__(self, observable):
-        Observer.__init__(self,observable)
+        Observer.__init__(self, observable)
 
     def update(self, subject):
         self.__humidity = subject.humidity
@@ -26,9 +29,10 @@ class CurrentConditionsDisplay(Observer, Display.Display):
         print("temperature " + str(self.__temperature))
         print("humidity " + str(self.__humidity))
 
-class StatisticsTempDisplay(Observer, Display.Display):
+
+class StatisticsTempDisplay(Observer, Display):
     def __init__(self, observable):
-        Observer.__init__(self,observable)
+        Observer.__init__(self, observable)
         self.__max = 0
         self.__min = 200
         self.__num = 0
@@ -46,4 +50,4 @@ class StatisticsTempDisplay(Observer, Display.Display):
     def display(self):
         print("max " + str(self.__max))
         print("min " + str(self.__min))
-        print("avg " + str(float(self.__sum)/self.__num))
+        print("avg " + str(float(self.__sum) / self.__num))

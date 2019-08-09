@@ -1,6 +1,3 @@
-from .observer import Observer
-
-
 class Subject:
     def __init__(self):
         self.__observers = []
@@ -13,7 +10,7 @@ class Subject:
         self.__observers.remove(observer)
 
     def notifyObservers(self):
-        if self.__changed == True:
+        if self.__changed is True:
             for everyObserver in self.__observers:
                 everyObserver.update(self)
             self.changed = False
