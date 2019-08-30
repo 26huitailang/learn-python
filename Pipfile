@@ -10,6 +10,10 @@ flake8 = "*"
 [packages]
 jupyter = "*"
 websockets = "*"
+bs4 = "*"
+requests = "*"
+lxml = "*"
+aiohttp = "*"
 
 [requires]
 python_version = "3.7"
